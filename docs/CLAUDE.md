@@ -21,13 +21,14 @@ This is a comprehensive UK service stations data collection and visualization pr
 ## Key Files
 
 ### Scripts Directory
-- `scripts/uk_service_stations.py` - Main production scraper with real website scraping
+- `scripts/uk_service_stations.py` - Master stations scraper using master file
 - `scripts/logo_downloader.py` - Downloads brand logos for web interface
 - `scripts/create_placeholder_logos.py` - Creates placeholder logo images
 
 ### Data Directory
 - `data/uk_service_stations.json` - Main dataset with scraped facilities
-- `data/test_cardiff_west.json` - Sample test data
+- `data/master_service_stations.json` - Master stations file with URLs (99% coverage)
+- `data/stations_missing_urls.json` - Reference for stations missing URLs
 
 ### Web Directory
 - `web/index.html` - Interactive web frontend with brand logos and map view
@@ -66,7 +67,8 @@ python -m http.server 8000
 
 ## Architecture Notes
 
-- `ServiceStationScraper` class handles all scraping logic
+- `MasterStationsScraper` class handles all scraping logic
+- Uses master stations file as definitive source (no CSV downloads)
 - Implements respectful scraping with 1-second delays between requests
 - Uses proper User-Agent headers to avoid blocking
 - Includes error handling and progress reporting
@@ -74,10 +76,10 @@ python -m http.server 8000
 
 ## Code Structure
 
-The improved scraper (`uk_service_stations.py`) follows this flow:
-1. `_get_motorway_list()` - Discovers all motorway pages
-2. `_scrape_motorway_stations()` - Finds stations for each motorway
-3. `_scrape_station_page()` - Extracts detailed station information
+The master stations scraper (`uk_service_stations.py`) follows this flow:
+1. `load_master_stations()` - Loads master stations file with URLs
+2. `scrape_facilities_enhanced()` - Scrapes facilities from each station URL
+3. Enhanced brand detection with comprehensive mapping
 4. Data is aggregated and saved to JSON with metadata
 
 ## Data Output

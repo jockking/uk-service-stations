@@ -1,26 +1,66 @@
 {
   "metadata": {
-    "last_updated": "2025-08-17T14:06:40.945509",
+    "created_date": "2025-08-17T14:08:54.167572",
     "total_stations": 102,
-    "successful_urls": 101,
-    "url_success_rate": "99.0%",
-    "data_source": "Enhanced CSV + Real Website Scraping v2",
-    "operators_supported": [
-      "Moto",
-      "Welcome Break",
+    "stations_with_urls": 101,
+    "stations_without_urls": 1,
+    "data_source": "Extracted from uk_service_stations.json",
+    "purpose": "Master reference for all UK motorway service stations",
+    "version": "1.0",
+    "operators": [
+      "Westmorland",
+      "BP Connect",
       "RoadChef",
+      "Euro Garages",
+      "Welcome Break",
+      "Stop 24",
       "Extra MSA",
-      "Westmorland"
+      "Moto"
     ],
-    "scraping_features": [
-      "Real website URL discovery",
-      "Enhanced brand detection (Greggs, M&S, Krispy Kreme)",
-      "Multiple search patterns per brand",
-      "Meta tag and alt text searching",
-      "Intelligent fallback data"
-    ]
+    "url_coverage_by_operator": {
+      "Westmorland": {
+        "total_stations": 5,
+        "stations_with_urls": 5,
+        "coverage_percentage": 100.0
+      },
+      "BP Connect": {
+        "total_stations": 1,
+        "stations_with_urls": 1,
+        "coverage_percentage": 100.0
+      },
+      "RoadChef": {
+        "total_stations": 20,
+        "stations_with_urls": 20,
+        "coverage_percentage": 100.0
+      },
+      "Euro Garages": {
+        "total_stations": 2,
+        "stations_with_urls": 2,
+        "coverage_percentage": 100.0
+      },
+      "Welcome Break": {
+        "total_stations": 27,
+        "stations_with_urls": 27,
+        "coverage_percentage": 100.0
+      },
+      "Stop 24": {
+        "total_stations": 1,
+        "stations_with_urls": 1,
+        "coverage_percentage": 100.0
+      },
+      "Extra MSA": {
+        "total_stations": 7,
+        "stations_with_urls": 7,
+        "coverage_percentage": 100.0
+      },
+      "Moto": {
+        "total_stations": 39,
+        "stations_with_urls": 38,
+        "coverage_percentage": 97.4
+      }
+    }
   },
-  "service_stations": [
+  "stations": [
     {
       "name": "Abington Services M74",
       "motorway": "M74",
@@ -40,37 +80,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/abington/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Annandale Water Services A74(M)",
@@ -91,32 +103,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/annandale-water",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Baldock Services A1(M)",
@@ -137,36 +126,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/baldock",
-      "facilities": {
-        "food_outlets": [
-          "Chopstix",
-          "Greggs",
-          "KFC",
-          "McDonald's",
-          "Starbucks"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Children Play Area",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Beaconsfield Services M40",
@@ -187,39 +149,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/beaconsfield",
-      "facilities": {
-        "food_outlets": [
-          "Chopstix",
-          "Greggs",
-          "KFC",
-          "Leon",
-          "McDonald's",
-          "Nando's",
-          "Pizza Express",
-          "Starbucks"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Birch Services M62",
@@ -240,35 +172,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/birch-eastbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Birchanger Green Services M11",
@@ -289,37 +195,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/birchanger-green/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Blackburn with Darwen Services M65",
@@ -340,33 +218,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/blackburn-with-darwen-services-m65-j4/",
-      "facilities": {
-        "food_outlets": [
-          "Chopstix",
-          "Costa Coffee",
-          "Greggs",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Blyth Services A1(M)",
@@ -387,35 +241,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/blyth/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Bothwell Services M74",
@@ -436,32 +264,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/bothwell",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Bridgwater Services M5",
@@ -482,34 +287,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/bridgwater/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Burton-in-Kendal Services M6",
@@ -530,36 +310,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/burton-in-kendal/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Burtonwood Services M62",
@@ -580,37 +333,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/burton/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Cambridge Services A14",
@@ -631,35 +356,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/cambridge",
-      "facilities": {
-        "food_outlets": [
-          "Chopstix",
-          "Costa Coffee",
-          "KFC",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Children Play Area",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Cardiff Gate Services M4",
@@ -680,37 +379,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/cardiff-gate/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Cardiff West Services M4",
@@ -731,37 +402,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/cardiff-west/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Charnock Richard Services M6",
@@ -782,37 +425,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/charnock-richard/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Cherwell Valley Services M40",
@@ -833,37 +448,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/cherwell-valley/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Chester Services M56",
@@ -884,31 +471,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/chester",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Chieveley Services M4",
@@ -929,37 +494,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/chieveley/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Clacket Lane Services M25",
@@ -980,31 +517,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Cobham Services M25",
@@ -1025,41 +540,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/cobham",
-      "facilities": {
-        "food_outlets": [
-          "Chopstix",
-          "Greggs",
-          "KFC",
-          "Leon",
-          "McDonald's",
-          "Nando's",
-          "Pizza Express",
-          "Pret A Manger",
-          "Starbucks"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Corley Services M6",
@@ -1080,37 +563,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/corley/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Cullompton Services M5",
@@ -1131,30 +586,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/cullompton",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Derby South Services Eastbound A50",
@@ -1175,37 +609,9 @@
       "pair_name": "Derby South Services Eastbound A50 A50",
       "is_pair": true,
       "website_url": "https://welcomebreak.co.uk/locations/derby/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Derby South Services Westbound A50",
@@ -1226,37 +632,9 @@
       "pair_name": "Derby South Services Westbound A50 A50",
       "is_pair": true,
       "website_url": "https://welcomebreak.co.uk/locations/derby/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Doncaster North Services M18",
@@ -1277,31 +655,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Donington Park Services M1",
@@ -1322,37 +678,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/donington-park/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Durham Services A1(M)",
@@ -1373,32 +701,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/durham",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Exeter Services M5",
@@ -1419,36 +724,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/exeter/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Ferrybridge Services M62",
@@ -1469,36 +747,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/ferrybridge/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Fleet Services M3",
@@ -1519,37 +770,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/fleet/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Frankley Services M5",
@@ -1570,36 +793,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/frankley-southbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Gloucester Services Northbound M5",
@@ -1620,23 +816,9 @@
       "pair_name": "Gloucester Services Northbound M5 M5",
       "is_pair": true,
       "website_url": "https://gloucesterservices.com/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
-        "amenities": [
-          "Disabled Access",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Gloucester Services Southbound M5",
@@ -1657,23 +839,9 @@
       "pair_name": "Gloucester Services Southbound M5 M5",
       "is_pair": true,
       "website_url": "https://gloucesterservices.com/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
-        "amenities": [
-          "Disabled Access",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Gordano Services M5",
@@ -1694,37 +862,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/gordano/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Grantham North Services A1",
@@ -1745,35 +885,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/grantham-north/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Gretna Green Services M74",
@@ -1794,38 +908,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/gretna-green/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Hamilton Services M74",
@@ -1846,32 +931,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/hamilton",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Happendon Services M74",
@@ -1892,23 +954,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://cairnlodgeservices.com/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
-        "amenities": [
-          "Disabled Access",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Hartshead Moor Services M62",
@@ -1929,37 +977,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/hartshead-moor/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Heart of Scotland M8",
@@ -1980,27 +1000,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://map.bp.com/en-GB/GB/petrol-station/shotts/harthill-south-sf-connect-mwsa/4054",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "McDonald's",
-          "Nando's"
-        ],
-        "retail_shops": [],
-        "amenities": [
-          "Cash Machine",
-          "EV Charging",
-          "Fuel Station",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Heston Services M4",
@@ -2021,36 +1023,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/heston-westbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Hilton Park Services M6",
@@ -2071,21 +1046,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": null,
-      "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
-        "amenities": [
-          "WiFi",
-          "Toilets",
-          "Parking",
-          "Fuel Station",
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Travelodge"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "no_url",
+      "scraping_notes": ""
     },
     {
       "name": "Hopwood Park Services M42",
@@ -2106,37 +1069,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/hopwood/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Keele Services M6",
@@ -2157,37 +1092,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/keele/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Killington Lake Services M6",
@@ -2208,31 +1115,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/killington-lake",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Kinross Services M90",
@@ -2253,35 +1138,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/kinross/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Knutsford Services M6",
@@ -2302,35 +1161,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/knutsford-northbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Lancaster (Forton) Services M6",
@@ -2351,37 +1184,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/lancaster-northbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Leicester (Markfield) Services M1",
@@ -2402,37 +1207,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/leicester-forest-east/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Leicester Forest East Services M1",
@@ -2453,37 +1230,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/leicester-forest-east/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Leigh Delamere Services M4",
@@ -2504,37 +1253,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/leigh-delamere-westbound",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "London Gateway Services M1",
@@ -2555,37 +1276,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/london/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Lymm Services M6",
@@ -2606,35 +1299,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/lymm/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Magor Services M4",
@@ -2655,32 +1322,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/magor",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Maidstone Services M20",
@@ -2701,31 +1345,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/maidstone",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Medway Services M2",
@@ -2746,36 +1368,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/medway-eastbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Membury Services M4",
@@ -2796,37 +1391,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/membury/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Michaelwood Services M5",
@@ -2847,36 +1414,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/michaelwood/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Newport Pagnell Services M1",
@@ -2897,37 +1437,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/newport-pagnell/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Northampton Services M1",
@@ -2948,29 +1460,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/northampton",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Norton Canes Services M6 Toll",
@@ -2991,30 +1483,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/norton-canes",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Oxford Services M40",
@@ -3035,37 +1506,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/oxford/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Pease Pottage Services M23",
@@ -3086,34 +1529,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/pease-pottage/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Peterborough Services A1(M)",
@@ -3134,35 +1552,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://extraservices.co.uk/locations/peterborough",
-      "facilities": {
-        "food_outlets": [
-          "Chopstix",
-          "Costa Coffee",
-          "KFC",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Children Play Area",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Pont Abraham Services M4",
@@ -3183,31 +1575,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/pont-abraham",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Reading Services M4",
@@ -3228,37 +1598,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/reading-westbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Rivington Services M61",
@@ -3279,22 +1621,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://eg-otm.com/locations/Bolton/RIVS",
-      "facilities": {
-        "food_outlets": [
-          "Greggs",
-          "Starbucks",
-          "Subway"
-        ],
-        "retail_shops": [
-          "Spar"
-        ],
-        "amenities": [
-          "Cash Machine",
-          "Fuel Station",
-          "Toilets"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Rownhams Services M27",
@@ -3315,32 +1644,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/rownhams-south",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Sandbach Services M6",
@@ -3361,31 +1667,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/sandbach",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Sarn Park Services M4",
@@ -3406,37 +1690,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/sarn/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Scotch Corner Services A1(M)",
@@ -3457,34 +1713,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/scotch-corner/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Sedgemoor Services Northbound M5",
@@ -3505,37 +1736,9 @@
       "pair_name": "Sedgemoor Services Northbound M5 M5",
       "is_pair": true,
       "website_url": "https://welcomebreak.co.uk/locations/sedgemoor/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Sedgemoor Services Southbound M5",
@@ -3556,31 +1759,9 @@
       "pair_name": "Sedgemoor Services Southbound M5 M5",
       "is_pair": true,
       "website_url": "https://www.roadchef.com/motorway-services/sedgemoor-south",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Severn View Services M48",
@@ -3601,36 +1782,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/severn-view/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "South Mimms Services M25",
@@ -3651,37 +1805,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/south-mimms/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Southwaite Services M6",
@@ -3702,35 +1828,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/southwaite-southbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Stafford Services Northbound M6",
@@ -3751,36 +1851,9 @@
       "pair_name": "Stafford Services Northbound M6 M6",
       "is_pair": true,
       "website_url": "https://moto-way.com/services/stafford-northbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Stafford Services Southbound M6",
@@ -3801,31 +1874,9 @@
       "pair_name": "Stafford Services Southbound M6 M6",
       "is_pair": true,
       "website_url": "https://www.roadchef.com/motorway-services/stafford-south",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Stirling Services M9",
@@ -3846,36 +1897,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/stirling/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Stop24 Services (Folkestone) M20",
@@ -3896,27 +1920,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/folkestone",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Strensham Services M5",
@@ -3937,31 +1943,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/strensham-south",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Swansea West M4",
@@ -3982,36 +1966,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/swansea/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Tamworth Services M42",
@@ -4032,36 +1989,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/tamworth/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Children Play Area",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Taunton Deane Services M5",
@@ -4082,31 +2012,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/taunton-deane-southbound",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Tebay Services Northbound M6",
@@ -4127,23 +2035,9 @@
       "pair_name": "Tebay Services Northbound M6 M6",
       "is_pair": true,
       "website_url": "https://www.tebayservices.com/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
-        "amenities": [
-          "Disabled Access",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Tebay Services Southbound M6",
@@ -4164,23 +2058,9 @@
       "pair_name": "Tebay Services Southbound M6 M6",
       "is_pair": true,
       "website_url": "https://www.tebayservices.com/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
-        "amenities": [
-          "Disabled Access",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Telford Services M54",
@@ -4201,37 +2081,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/telford/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Thurrock Services M25",
@@ -4252,34 +2104,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/thurrock/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Tibshelf Services M1",
@@ -4300,32 +2127,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/tibshelf-northbound",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Tiverton Services M5",
@@ -4346,35 +2150,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/tiverton/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Toddington Services M1",
@@ -4395,35 +2173,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/toddington-southbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Todhills Rest Area M6",
@@ -4444,32 +2196,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/todhills-southbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Trowell Services M1",
@@ -4490,36 +2219,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/trowell-northbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Warwick Services Northbound M40",
@@ -4540,37 +2242,9 @@
       "pair_name": "Warwick Services Northbound M40 M40",
       "is_pair": true,
       "website_url": "https://welcomebreak.co.uk/locations/warwick/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Warwick Services Southbound M40",
@@ -4591,37 +2265,9 @@
       "pair_name": "Warwick Services Southbound M40 M40",
       "is_pair": true,
       "website_url": "https://welcomebreak.co.uk/locations/warwick/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Washington Services A1(M)",
@@ -4642,35 +2288,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/washington-northbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Watford Gap Services M1",
@@ -4691,31 +2311,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/watford-gap",
-      "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Wetherby Services A1(M)",
@@ -4736,36 +2334,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/wetherby/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Leon",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "Dog Walking Area",
-          "EV Charging",
-          "Fuel Station",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Winchester Services M3",
@@ -4786,29 +2357,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/motorway-services/motorway-services-by-motorway/m3-motorway-services/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "EV Charging",
-          "Fuel Station",
-          "Parking",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Woodall Services M1",
@@ -4829,37 +2380,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://welcomebreak.co.uk/locations/woodall/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Chopstix",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
-        ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Ramada",
-          "Showers",
-          "Toilets",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     },
     {
       "name": "Woolley Edge Services M1",
@@ -4880,35 +2403,9 @@
       "pair_name": null,
       "is_pair": false,
       "website_url": "https://moto-way.com/services/woolley-edge-southbound/",
-      "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Marks & Spencer",
-          "Spar",
-          "WHSmith"
-        ],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
-        ],
-        "services": []
-      }
+      "last_scraped": null,
+      "scraping_status": "success",
+      "scraping_notes": ""
     }
   ]
 }

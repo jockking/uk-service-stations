@@ -10,9 +10,10 @@ uk-service-stations/
 ├── requirements.txt       # Python dependencies
 ├── data/                  # Data files
 │   ├── uk_service_stations.json    # Main dataset (scraped data)
-│   └── test_cardiff_west.json      # Test data sample
+│   ├── master_service_stations.json # Master stations file with URLs
+│   └── stations_missing_urls.json  # Reference for missing URLs
 ├── scripts/               # Python scripts
-│   ├── uk_service_stations.py      # Main production scraper
+│   ├── uk_service_stations.py      # Master stations scraper (uses master file)
 │   ├── logo_downloader.py           # Downloads brand logos
 │   └── create_placeholder_logos.py # Creates placeholder logos
 ├── web/                   # Web interface
@@ -27,10 +28,11 @@ uk-service-stations/
 ## 🚀 Features
 
 ### Data Collection
+- **Master File Based**: Uses comprehensive master stations file with 99% URL coverage
 - **Real Website Scraping**: Collects actual facilities data from operator websites
-- **Multiple Operators**: Supports Moto, Welcome Break, RoadChef, Extra MSA, Westmorland
+- **Multiple Operators**: Supports Moto, Welcome Break, RoadChef, Extra MSA, Westmorland + more
 - **Comprehensive Data**: Name, location, coordinates, facilities, amenities, parking charges
-- **Respectful Scraping**: Implements delays and error handling
+- **Efficient Processing**: Direct URL scraping without discovery overhead
 
 ### Web Interface
 - **Interactive Dashboard**: Modern, responsive design
