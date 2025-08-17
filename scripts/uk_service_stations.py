@@ -23,6 +23,9 @@ class UpdatedProductionScraper:
         self.session = requests.Session()
         self.session.headers.update(self.headers)
         
+        # Load suggested URLs for stations missing URLs
+        self.suggested_urls = self.load_suggested_urls()
+        
         self.operator_configs = {
             'Moto': {
                 'url_patterns': [
@@ -55,6 +58,27 @@ class UpdatedProductionScraper:
                 }
             }
         }
+
+    def load_suggested_urls(self):
+        """Load suggested URLs from the stations_missing_urls.json file"""
+        try:
+            with open('../data/stations_missing_urls.json', 'r', encoding='utf-8') as f:
+                data = json.load(f)
+            
+            suggested_urls = {}
+            for station in data.get('stations_needing_urls', []):
+                if station.get('suggested_url'):
+                    # Use station name as key for lookup
+                    suggested_urls[station['name']] = station['suggested_url']
+            
+            print(f"Loaded {len(suggested_urls)} suggested URLs from stations_missing_urls.json")
+            return suggested_urls
+        except FileNotFoundError:
+            print("Warning: stations_missing_urls.json not found, continuing without suggested URLs")
+            return {}
+        except Exception as e:
+            print(f"Error loading suggested URLs: {str(e)}")
+            return {}
 
     def generate_slug_variations(self, station_name):
         """Generate comprehensive slug variations for URL discovery"""
@@ -129,6 +153,23 @@ class UpdatedProductionScraper:
 
     def discover_station_url(self, station_name, operator):
         """Discover the URL for a service station"""
+        # First, check if we have a suggested URL for this station
+        if station_name in self.suggested_urls:
+            suggested_url = self.suggested_urls[station_name]
+            # Try a more lenient test for suggested URLs using GET instead of HEAD
+            try:
+                response = self.session.get(suggested_url, timeout=15, allow_redirects=True)
+                if response.status_code in [200, 301, 302]:
+                    print(f"    ✅ Using suggested URL: {suggested_url}")
+                    return suggested_url
+                else:
+                    print(f"    ⚠️ Suggested URL returned {response.status_code}: {suggested_url}")
+            except Exception as e:
+                print(f"    ⚠️ Suggested URL failed test: {suggested_url} - {str(e)}")
+                # Still try to use it as some sites block HEAD requests but allow scraping
+                print(f"    🔄 Attempting to use suggested URL anyway: {suggested_url}")
+                return suggested_url
+        
         if operator not in self.operator_configs:
             return None
         
