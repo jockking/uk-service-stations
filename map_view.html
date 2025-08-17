@@ -457,7 +457,7 @@
 
         async function loadServiceStations() {
             try {
-                const response = await fetch('../data/uk_service_stations.json');
+                const response = await fetch('data/uk_service_stations.json');
                 const data = await response.json();
                 serviceStations = data.service_stations;
                 filteredStations = [...serviceStations];
