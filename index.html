@@ -788,7 +788,7 @@
                 <div class="food-brand-filter">
                     <div class="filter-title">
                         <i class="fas fa-utensils"></i>
-                        Filter by Food Outlets (with local logos)
+                        Filter by Brands (with local logos)
                     </div>
                     <div class="brand-filters" id="brand-filters">
                         <!-- Brand filters will be populated by JavaScript -->
@@ -1041,6 +1041,14 @@
                     station.facilities.food_outlets.forEach(outlet => {
                         if (foodBrands[outlet]) {
                             brandCounts[outlet] = (brandCounts[outlet] || 0) + 1;
+                        }
+                    });
+                }
+                // Also include retail shops that have logos (like M&S)
+                if (station.facilities && station.facilities.retail_shops) {
+                    station.facilities.retail_shops.forEach(shop => {
+                        if (foodBrands[shop]) {
+                            brandCounts[shop] = (brandCounts[shop] || 0) + 1;
                         }
                     });
                 }
@@ -1425,9 +1433,9 @@
                 const matchesMotorway = !motorwayFilter || station.motorway === motorwayFilter;
                 
                 const matchesBrands = activeBrandFilters.size === 0 || 
-                    (station.facilities.food_outlets && 
-                     Array.from(activeBrandFilters).some(brand => 
-                         station.facilities.food_outlets.includes(brand)));
+                    Array.from(activeBrandFilters).some(brand => 
+                        (station.facilities.food_outlets && station.facilities.food_outlets.includes(brand)) ||
+                        (station.facilities.retail_shops && station.facilities.retail_shops.includes(brand)));
 
                 return matchesSearch && matchesOperator && matchesMotorway && matchesBrands;
             });
