@@ -98,7 +98,7 @@ class MasterStationsScraper:
             facilities = {
                 'food_outlets': [],
                 'retail_shops': [],
-                'amenities': ['WiFi', 'Toilets', 'Parking', 'Fuel Station', 'Baby Changing', 'Disabled Access'],
+                'amenities': [],
                 'services': []
             }
             
@@ -139,11 +139,31 @@ class MasterStationsScraper:
             facilities['food_outlets'] = sorted(list(set(facilities['food_outlets'])))
             facilities['retail_shops'] = sorted(list(set(facilities['retail_shops'])))
             
-            # Add common amenities based on content
+            # Detect amenities based on content
             amenity_keywords = {
+                # Basic facilities
+                'wifi': 'WiFi',
+                'wi-fi': 'WiFi',
+                'wireless': 'WiFi',
+                'toilet': 'Toilets',
+                'restroom': 'Toilets',
+                'wc': 'Toilets',
+                'parking': 'Parking',
+                'car park': 'Parking',
+                'fuel': 'Fuel Station',
+                'petrol': 'Fuel Station',
+                'diesel': 'Fuel Station',
+                'baby chang': 'Baby Changing',
+                'changing room': 'Baby Changing',
+                'disabled access': 'Disabled Access',
+                'wheelchair': 'Disabled Access',
+                'accessible': 'Disabled Access',
+                
+                # Additional amenities
                 'ev charging': 'EV Charging',
                 'electric charging': 'EV Charging',
                 'electric vehicle': 'EV Charging',
+                'charging point': 'EV Charging',
                 'travelodge': 'Travelodge',
                 'hotel': 'Hotel',
                 'accommodation': 'Hotel',
@@ -202,19 +222,19 @@ class MasterStationsScraper:
                         if found_targets:
                             print(f"  🎯 Found: {', '.join(found_targets)}")
                     else:
-                        print(f"  ⚠️  Scraping failed, using basic amenities")
+                        print(f"  ⚠️  Scraping failed, no facilities data available")
                         facilities = {
                             'food_outlets': [],
                             'retail_shops': [],
-                            'amenities': ['WiFi', 'Toilets', 'Parking', 'Fuel Station', 'Baby Changing', 'Disabled Access'],
+                            'amenities': [],
                             'services': []
                         }
                 else:
-                    print(f"  ❌ No URL available")
+                    print(f"  ❌ No URL available, no facilities data")
                     facilities = {
                         'food_outlets': [],
                         'retail_shops': [],
-                        'amenities': ['WiFi', 'Toilets', 'Parking', 'Fuel Station', 'Baby Changing', 'Disabled Access'],
+                        'amenities': [],
                         'services': []
                     }
                 
