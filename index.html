@@ -1433,7 +1433,7 @@
                 const matchesMotorway = !motorwayFilter || station.motorway === motorwayFilter;
                 
                 const matchesBrands = activeBrandFilters.size === 0 || 
-                    Array.from(activeBrandFilters).some(brand => 
+                    Array.from(activeBrandFilters).every(brand => 
                         (station.facilities.food_outlets && station.facilities.food_outlets.includes(brand)) ||
                         (station.facilities.retail_shops && station.facilities.retail_shops.includes(brand)));
 
