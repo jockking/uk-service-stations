@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "last_updated": "2025-08-17T14:39:44.253651",
+    "last_updated": "2025-08-17T15:02:48.082448",
     "total_stations": 102,
     "successful_urls": 102,
-    "successful_scrapes": 101,
+    "successful_scrapes": 78,
     "url_success_rate": "100.0%",
-    "scrape_success_rate": "99.0%",
+    "scrape_success_rate": "76.5%",
     "data_source": "Master Stations File + Real Website Scraping",
     "scraper_version": "Master Stations Scraper v1.0",
     "operators_supported": [
-      "RoadChef",
-      "Extra MSA",
       "Stop 24",
-      "Westmorland",
-      "Moto",
-      "BP Connect",
       "Euro Garages",
-      "Welcome Break"
+      "BP Connect",
+      "Welcome Break",
+      "Westmorland",
+      "Extra MSA",
+      "RoadChef",
+      "Moto"
     ],
     "scraping_features": [
       "Master stations file as source",
@@ -99,14 +99,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -240,7 +233,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -380,7 +372,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -415,14 +406,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -460,7 +444,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -506,7 +489,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -698,7 +680,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -795,7 +776,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -830,14 +810,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -875,7 +848,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -910,14 +882,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -1185,14 +1150,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -1230,7 +1188,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1265,14 +1222,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -1310,7 +1260,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1357,7 +1306,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1454,7 +1402,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1490,14 +1437,10 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets",
-          "WiFi"
+          "Toilets"
         ],
         "services": []
       }
@@ -1525,14 +1468,10 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets",
-          "WiFi"
+          "Toilets"
         ],
         "services": []
       }
@@ -1621,7 +1560,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1706,14 +1644,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -1740,14 +1671,10 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets",
-          "WiFi"
+          "Toilets"
         ],
         "services": []
       }
@@ -1824,14 +1751,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -1869,7 +1789,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1904,14 +1823,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "WiFi",
-          "Toilets",
-          "Parking",
-          "Fuel Station",
-          "Baby Changing",
-          "Disabled Access"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2037,14 +1949,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2082,7 +1987,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2129,7 +2033,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2176,7 +2079,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2323,7 +2225,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2420,7 +2321,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2454,14 +2354,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2487,14 +2380,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2532,7 +2418,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2639,7 +2524,6 @@
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -2717,14 +2601,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2750,14 +2627,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2845,7 +2715,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2925,14 +2794,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -2970,7 +2832,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3009,14 +2870,7 @@
           "Subway"
         ],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3042,14 +2896,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3075,14 +2922,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3170,7 +3010,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3254,14 +3093,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3299,7 +3131,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3396,7 +3227,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3443,7 +3273,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3478,14 +3307,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3523,7 +3345,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3558,14 +3379,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3591,14 +3405,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3636,7 +3443,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3683,7 +3489,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3718,14 +3523,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3752,14 +3550,10 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets",
-          "WiFi"
+          "Toilets"
         ],
         "services": []
       }
@@ -3787,14 +3581,10 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets",
-          "WiFi"
+          "Toilets"
         ],
         "services": []
       }
@@ -3883,7 +3673,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3917,14 +3706,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3962,7 +3744,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4008,7 +3789,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4055,7 +3835,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4100,7 +3879,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4247,7 +4025,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4282,14 +4059,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Baby Changing",
-          "Disabled Access",
-          "Fuel Station",
-          "Parking",
-          "Toilets",
-          "WiFi"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -4329,7 +4099,6 @@
         "amenities": [
           "Baby Changing",
           "Days Inn",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4374,13 +4143,10 @@
           "WHSmith"
         ],
         "amenities": [
-          "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -4470,7 +4236,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
