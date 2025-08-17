@@ -1,23 +1,29 @@
 {
   "metadata": {
-    "last_updated": "2025-08-17T14:06:40.945509",
+    "last_updated": "2025-08-17T14:39:44.253651",
     "total_stations": 102,
-    "successful_urls": 101,
-    "url_success_rate": "99.0%",
-    "data_source": "Enhanced CSV + Real Website Scraping v2",
+    "successful_urls": 102,
+    "successful_scrapes": 101,
+    "url_success_rate": "100.0%",
+    "scrape_success_rate": "99.0%",
+    "data_source": "Master Stations File + Real Website Scraping",
+    "scraper_version": "Master Stations Scraper v1.0",
     "operators_supported": [
-      "Moto",
-      "Welcome Break",
       "RoadChef",
       "Extra MSA",
-      "Westmorland"
+      "Stop 24",
+      "Westmorland",
+      "Moto",
+      "BP Connect",
+      "Euro Garages",
+      "Welcome Break"
     ],
     "scraping_features": [
-      "Real website URL discovery",
-      "Enhanced brand detection (Greggs, M&S, Krispy Kreme)",
-      "Multiple search patterns per brand",
-      "Meta tag and alt text searching",
-      "Intelligent fallback data"
+      "Master stations file as source",
+      "Direct URL scraping (no discovery needed)",
+      "Enhanced brand detection",
+      "Comprehensive facility mapping",
+      "Efficient processing"
     ]
   },
   "service_stations": [
@@ -64,7 +70,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -92,26 +97,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/annandale-water",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -146,15 +138,12 @@
           "Starbucks"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
-          "Children Play Area",
           "Days Inn",
           "Disabled Access",
           "EV Charging",
@@ -199,17 +188,13 @@
           "Starbucks"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -250,9 +235,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -313,7 +296,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -347,15 +329,11 @@
           "Greggs",
           "McDonald's"
         ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -397,9 +375,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -437,26 +413,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/bothwell",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -492,17 +455,15 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
+          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -540,15 +501,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -604,7 +562,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -639,21 +596,17 @@
           "McDonald's"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
-          "Children Play Area",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -704,7 +657,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -741,16 +693,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -806,7 +754,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -843,16 +790,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -885,25 +828,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/chester",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -939,16 +870,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -981,26 +908,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -1038,22 +953,17 @@
           "Starbucks"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -1104,7 +1014,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -1137,8 +1046,6 @@
           "McDonald's"
         ],
         "retail_shops": [
-          "Boots",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1200,7 +1107,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Toilets",
           "WiFi"
         ],
@@ -1251,7 +1157,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Toilets",
           "WiFi"
         ],
@@ -1278,26 +1183,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -1332,16 +1225,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1374,26 +1263,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/durham",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -1429,15 +1305,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1479,15 +1352,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1543,7 +1413,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -1580,15 +1449,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -1621,19 +1487,17 @@
       "is_pair": true,
       "website_url": "https://gloucesterservices.com/",
       "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
+          "Baby Changing",
           "Disabled Access",
+          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets"
+          "Toilets",
+          "WiFi"
         ],
         "services": []
       }
@@ -1658,19 +1522,17 @@
       "is_pair": true,
       "website_url": "https://gloucesterservices.com/",
       "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
+          "Baby Changing",
           "Disabled Access",
+          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets"
+          "Toilets",
+          "WiFi"
         ],
         "services": []
       }
@@ -1718,7 +1580,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -1755,9 +1616,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1812,14 +1671,12 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -1847,26 +1704,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/hamilton",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -1893,19 +1737,17 @@
       "is_pair": false,
       "website_url": "https://cairnlodgeservices.com/",
       "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
+          "Baby Changing",
           "Disabled Access",
+          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets"
+          "Toilets",
+          "WiFi"
         ],
         "services": []
       }
@@ -1953,7 +1795,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -1981,21 +1822,13 @@
       "is_pair": false,
       "website_url": "https://map.bp.com/en-GB/GB/petrol-station/shotts/harthill-south-sf-connect-mwsa/4054",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "McDonald's",
-          "Nando's"
-        ],
+        "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Cash Machine",
-          "EV Charging",
+          "Baby Changing",
+          "Disabled Access",
           "Fuel Station",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -2031,15 +1864,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2080,9 +1910,7 @@
           "Parking",
           "Fuel Station",
           "Baby Changing",
-          "Disabled Access",
-          "EV Charging",
-          "Travelodge"
+          "Disabled Access"
         ],
         "services": []
       }
@@ -2130,7 +1958,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2181,7 +2008,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2209,25 +2035,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/killington-lake",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -2263,9 +2077,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2312,9 +2124,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2361,16 +2171,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2426,7 +2232,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2477,7 +2282,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2514,16 +2318,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2579,7 +2379,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2616,15 +2415,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2656,26 +2452,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/magor",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -2702,26 +2485,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/maidstone",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -2756,15 +2527,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -2820,7 +2588,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2871,8 +2638,8 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -2921,7 +2688,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -2949,24 +2715,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/northampton",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -2992,25 +2748,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/norton-canes",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -3059,7 +2804,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -3096,17 +2840,15 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
+          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -3142,15 +2884,12 @@
           "McDonald's"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
-          "Children Play Area",
           "Days Inn",
           "Disabled Access",
           "EV Charging",
@@ -3184,25 +2923,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/pont-abraham",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -3238,16 +2965,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3285,13 +3008,14 @@
           "Starbucks",
           "Subway"
         ],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
-          "Cash Machine",
+          "Baby Changing",
+          "Disabled Access",
           "Fuel Station",
-          "Toilets"
+          "Parking",
+          "Toilets",
+          "WiFi"
         ],
         "services": []
       }
@@ -3316,26 +3040,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/rownhams-south",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -3362,26 +3073,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/sandbach",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -3430,7 +3129,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -3467,9 +3165,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3529,7 +3225,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -3557,25 +3252,13 @@
       "is_pair": true,
       "website_url": "https://www.roadchef.com/motorway-services/sedgemoor-south",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -3611,15 +3294,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3675,7 +3355,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -3712,9 +3391,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3761,15 +3438,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3802,26 +3476,14 @@
       "is_pair": true,
       "website_url": "https://www.roadchef.com/motorway-services/stafford-south",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -3856,15 +3518,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -3897,22 +3556,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/folkestone",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Days Inn",
+          "Baby Changing",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -3938,25 +3589,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/strensham-south",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
-          "Hotel",
+          "Fuel Station",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -3992,15 +3631,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4042,14 +3678,11 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Children Play Area",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
@@ -4083,25 +3716,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/taunton-deane-southbound",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -4128,19 +3749,17 @@
       "is_pair": true,
       "website_url": "https://www.tebayservices.com/",
       "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
+          "Baby Changing",
           "Disabled Access",
+          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets"
+          "Toilets",
+          "WiFi"
         ],
         "services": []
       }
@@ -4165,19 +3784,17 @@
       "is_pair": true,
       "website_url": "https://www.tebayservices.com/",
       "facilities": {
-        "food_outlets": [
-          "Burger King"
-        ],
-        "retail_shops": [
-          "Boots",
-          "Spar"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
+          "Baby Changing",
           "Disabled Access",
+          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
-          "Toilets"
+          "Toilets",
+          "WiFi"
         ],
         "services": []
       }
@@ -4225,7 +3842,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -4262,9 +3878,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4301,26 +3915,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/tibshelf-northbound",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
           "Toilets",
           "WiFi"
         ],
@@ -4356,15 +3957,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4405,9 +4003,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4454,9 +4050,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4464,6 +4058,7 @@
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
+          "Hotel",
           "Parking",
           "Toilets",
           "WiFi"
@@ -4500,15 +4095,12 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
           "Hotel",
@@ -4564,7 +4156,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -4615,7 +4206,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -4652,9 +4242,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4692,26 +4280,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/watford-gap",
       "facilities": {
-        "food_outlets": [
-          "Costa Coffee",
-          "Krispy Kreme",
-          "Leon",
-          "McDonald's"
-        ],
-        "retail_shops": [
-          "Spar",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
-          "Cash Machine",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
-          "Showers",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -4747,18 +4323,16 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
           "Days Inn",
           "Disabled Access",
-          "Dog Walking Area",
           "EV Charging",
           "Fuel Station",
+          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -4796,15 +4370,17 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
+          "Baby Changing",
+          "Disabled Access",
           "EV Charging",
           "Fuel Station",
+          "Hotel",
           "Parking",
+          "Toilets",
           "WiFi"
         ],
         "services": []
@@ -4853,7 +4429,6 @@
           "Fuel Station",
           "Hotel",
           "Parking",
-          "Ramada",
           "Showers",
           "Toilets",
           "WiFi"
@@ -4890,9 +4465,7 @@
           "Pret A Manger"
         ],
         "retail_shops": [
-          "Boots",
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
