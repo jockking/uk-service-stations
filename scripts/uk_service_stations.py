@@ -45,9 +45,15 @@ class MasterStationsScraper:
     def scrape_facilities_enhanced(self, url, operator):
         """Enhanced facility scraping with comprehensive brand detection"""
         try:
-            response = self.session.get(url, timeout=15)
+            # Try with different headers to avoid blocking
+            response = self.session.get(url, timeout=20, allow_redirects=True)
             response.raise_for_status()
             soup = BeautifulSoup(response.content, 'html.parser')
+            
+            # Debug: Check if we got minimal content (JavaScript-heavy sites)
+            page_length = len(response.content)
+            if page_length < 10000:  # Very small page, likely minimal HTML
+                print(f"    ⚠️  Minimal content detected ({page_length} bytes), may be JavaScript-heavy")
             
             # Comprehensive brand mapping
             brand_mapping = {
@@ -105,17 +111,35 @@ class MasterStationsScraper:
             # Extract all text content
             page_text = soup.get_text().lower()
             
-            # Enhanced brand detection
+            # Also extract from script tags (JSON-LD, etc.)
+            script_text = ""
+            for script in soup.find_all('script'):
+                if script.string:
+                    script_text += script.string.lower() + " "
+            
+            # Combine all text sources
+            all_text = page_text + " " + script_text
+            
+            # Enhanced brand detection from all sources
             found_brands = set()
             for search_term, brand_name in brand_mapping.items():
-                if search_term in page_text:
+                if search_term in all_text:
                     found_brands.add(brand_name)
             
-            # Also check in meta tags, alt texts, and specific elements
-            for element in soup.find_all(['img', 'a', 'div', 'span'], alt=True):
+            # Check in meta tags, alt texts, and specific elements
+            for element in soup.find_all(['img', 'a', 'div', 'span', 'li', 'p'], alt=True):
                 alt_text = element.get('alt', '').lower()
                 for search_term, brand_name in brand_mapping.items():
                     if search_term in alt_text:
+                        found_brands.add(brand_name)
+            
+            # Check element text content and class names
+            for element in soup.find_all(['div', 'span', 'li', 'p', 'h1', 'h2', 'h3', 'h4']):
+                element_text = element.get_text().lower()
+                class_names = ' '.join(element.get('class', [])).lower()
+                
+                for search_term, brand_name in brand_mapping.items():
+                    if search_term in element_text or search_term in class_names:
                         found_brands.add(brand_name)
             
             # Categorize brands
@@ -174,7 +198,7 @@ class MasterStationsScraper:
             }
             
             for keyword, amenity in amenity_keywords.items():
-                if keyword in page_text and amenity not in facilities['amenities']:
+                if keyword in all_text and amenity not in facilities['amenities']:
                     facilities['amenities'].append(amenity)
             
             facilities['amenities'] = sorted(list(set(facilities['amenities'])))
