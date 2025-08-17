@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Service Stations Map Explorer</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f5f5;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-size: 2.2rem;
+            margin-bottom: 8px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+
+        .controls-panel {
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #eee;
+        }
+
+        .view-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .toggle-btn {
+            padding: 10px 20px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .toggle-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .toggle-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .filters-container {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filter-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .search-box, .filter-select {
+            padding: 10px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box:focus, .filter-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .clear-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .clear-btn:hover {
+            background: #ff5252;
+        }
+
+        .main-content {
+            display: flex;
+            height: calc(100vh - 200px);
+        }
+
+        .map-container {
+            flex: 1;
+            position: relative;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .sidebar {
+            width: 400px;
+            background: white;
+            border-left: 1px solid #eee;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .sidebar.show {
+            display: block;
+        }
+
+        .sidebar-header {
+            padding: 20px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #eee;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .sidebar-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .results-count {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .station-list {
+            padding: 20px;
+        }
+
+        .station-item {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 15px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .station-item:hover {
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .station-item.highlighted {
+            border-color: #667eea;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .station-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .station-info {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .info-tag {
+            background: #667eea;
+            color: white;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+        }
+
+        .operator-tag { background: #51cf66; }
+        .motorway-tag { background: #ff8cc8; }
+
+        .food-brands {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-top: 8px;
+        }
+
+        .food-brand {
+            background: #f8f9fa;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            color: #666;
+        }
+
+        .map-stats {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            min-width: 200px;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            font-size: 1.2rem;
+            color: #666;
+        }
+
+        /* Custom map marker styles */
+        .custom-marker {
+            background: #667eea;
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .custom-marker.moto { background: #ff6b35; }
+        .custom-marker.welcome-break { background: #00a8ff; }
+        .custom-marker.roadchef { background: #2ed573; }
+        .custom-marker.extra-msa { background: #ff3838; }
+        .custom-marker.westmorland { background: #8c7ae6; }
+
+        .map-popup {
+            max-width: 300px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .popup-info {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .popup-brands {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 8px;
+        }
+
+        .popup-brand {
+            background: #667eea;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+        }
+
+        .popup-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        .popup-link:hover {
+            background: #5a67d8;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+                height: auto;
+            }
+
+            .sidebar {
+                width: 100%;
+                max-height: 40vh;
+            }
+
+            .map-container {
+                height: 60vh;
+            }
+
+            .filters-container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-group {
+                justify-content: center;
+            }
+
+            .map-stats {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><i class="fas fa-map-marked-alt"></i> UK Service Stations Map Explorer</h1>
+        <p class="subtitle">Interactive map with geolocation data and filtering</p>
+    </div>
+
+    <div class="controls-panel">
+        <div class="view-toggle">
+            <button class="toggle-btn active" onclick="showMapView()">
+                <i class="fas fa-map"></i> Map View
+            </button>
+            <button class="toggle-btn" onclick="showListView()">
+                <i class="fas fa-list"></i> List View
+            </button>
+        </div>
+
+        <div class="filters-container">
+            <div class="filter-group">
+                <input type="text" id="search" class="search-box" placeholder="🔍 Search stations...">
+            </div>
+            <div class="filter-group">
+                <select id="operator-filter" class="filter-select">
+                    <option value="">All Operators</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="motorway-filter" class="filter-select">
+                    <option value="">All Motorways</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <select id="food-filter" class="filter-select">
+                    <option value="">All Food Outlets</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <button id="clear-filters" class="clear-btn">Clear Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <div class="map-container">
+            <div id="loading" class="loading">
+                <i class="fas fa-spinner fa-spin"></i> Loading service stations...
+            </div>
+            <div id="map" style="display: none;"></div>
+            
+            <div class="map-stats" id="map-stats" style="display: none;">
+                <div class="stat-item">
+                    <span>Total Stations:</span>
+                    <span class="stat-value" id="total-stations">0</span>
+                </div>
+                <div class="stat-item">
+                    <span>Visible:</span>
+                    <span class="stat-value" id="visible-stations">0</span>
+                </div>
+                <div class="stat-item">
+                    <span>With URLs:</span>
+                    <span class="stat-value" id="stations-with-urls">0</span>
+                </div>
+                <div class="stat-item">
+                    <span>Operators:</span>
+                    <span class="stat-value" id="operators-count">0</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <div class="sidebar-title">Service Stations</div>
+                <div class="results-count" id="results-count">0 stations</div>
+            </div>
+            <div class="station-list" id="station-list">
+                <!-- Station items will be populated here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let map;
+        let serviceStations = [];
+        let filteredStations = [];
+        let stationMarkers = [];
+        let currentView = 'map';
+
+        // Operator colors for markers
+        const operatorColors = {
+            'Moto': '#ff6b35',
+            'Welcome Break': '#00a8ff',
+            'RoadChef': '#2ed573',
+            'Extra MSA': '#ff3838',
+            'Westmorland': '#8c7ae6',
+            'default': '#667eea'
+        };
+
+        // Initialize the application
+        document.addEventListener('DOMContentLoaded', function() {
+            loadServiceStations();
+            setupEventListeners();
+        });
+
+        async function loadServiceStations() {
+            try {
+                const response = await fetch('../data/uk_service_stations.json');
+                const data = await response.json();
+                serviceStations = data.service_stations;
+                filteredStations = [...serviceStations];
+                
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('map').style.display = 'block';
+                document.getElementById('map-stats').style.display = 'block';
+                
+                initializeMap();
+                populateFilters();
+                updateDisplay();
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error loading data';
+            }
+        }
+
+        function initializeMap() {
+            // Initialize map centered on UK
+            map = L.map('map').setView([54.5, -3.0], 6);
+            
+            // Add tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add markers for all stations
+            addMarkersToMap();
+        }
+
+        function addMarkersToMap() {
+            // Clear existing markers
+            stationMarkers.forEach(marker => map.removeLayer(marker));
+            stationMarkers = [];
+
+            filteredStations.forEach(station => {
+                const lat = station.coordinates.latitude;
+                const lng = station.coordinates.longitude;
+                
+                if (lat && lng) {
+                    // Create custom marker
+                    const operatorClass = station.operator.toLowerCase().replace(/\\s+/g, '-');
+                    const color = operatorColors[station.operator] || operatorColors.default;
+                    
+                    const marker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: color,
+                        color: 'white',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    });
+
+                    // Create popup content
+                    const popupContent = createPopupContent(station);
+                    marker.bindPopup(popupContent, { maxWidth: 300 });
+
+                    // Add click event
+                    marker.on('click', function() {
+                        highlightStationInSidebar(station.name);
+                    });
+
+                    marker.addTo(map);
+                    stationMarkers.push(marker);
+                }
+            });
+
+            // Fit map to show all visible markers if there are any
+            if (stationMarkers.length > 0) {
+                const group = new L.featureGroup(stationMarkers);
+                map.fitBounds(group.getBounds().pad(0.1));
+            }
+        }
+
+        function createPopupContent(station) {
+            const foodOutlets = station.facilities.food_outlets || [];
+            const websiteLink = station.website_url ? 
+                `<a href="${station.website_url}" target="_blank" class="popup-link"><i class="fas fa-external-link-alt"></i> Visit Website</a>` : '';
+
+            return `
+                <div class="map-popup">
+                    <div class="popup-header">${station.name}</div>
+                    <div class="popup-info">
+                        <strong>${station.operator}</strong> • ${station.motorway}<br>
+                        📍 ${station.location}
+                    </div>
+                    ${foodOutlets.length > 0 ? `
+                        <div style="margin-top: 8px;">
+                            <strong>Food Outlets:</strong>
+                            <div class="popup-brands">
+                                ${foodOutlets.slice(0, 6).map(outlet => 
+                                    `<span class="popup-brand">${outlet}</span>`
+                                ).join('')}
+                                ${foodOutlets.length > 6 ? `<span class="popup-brand">+${foodOutlets.length - 6} more</span>` : ''}
+                            </div>
+                        </div>
+                    ` : ''}
+                    ${websiteLink}
+                </div>
+            `;
+        }
+
+        function populateFilters() {
+            // Populate operator filter
+            const operatorFilter = document.getElementById('operator-filter');
+            const operators = [...new Set(serviceStations.map(s => s.operator))].sort();
+            operators.forEach(operator => {
+                const option = document.createElement('option');
+                option.value = operator;
+                option.textContent = operator;
+                operatorFilter.appendChild(option);
+            });
+
+            // Populate motorway filter
+            const motorwayFilter = document.getElementById('motorway-filter');
+            const motorways = [...new Set(serviceStations.map(s => s.motorway))].sort();
+            motorways.forEach(motorway => {
+                const option = document.createElement('option');
+                option.value = motorway;
+                option.textContent = motorway;
+                motorwayFilter.appendChild(option);
+            });
+
+            // Populate food filter
+            const foodFilter = document.getElementById('food-filter');
+            const foodOutlets = new Set();
+            serviceStations.forEach(station => {
+                if (station.facilities.food_outlets) {
+                    station.facilities.food_outlets.forEach(outlet => foodOutlets.add(outlet));
+                }
+            });
+            [...foodOutlets].sort().forEach(outlet => {
+                const option = document.createElement('option');
+                option.value = outlet;
+                option.textContent = outlet;
+                foodFilter.appendChild(option);
+            });
+        }
+
+        function setupEventListeners() {
+            document.getElementById('search').addEventListener('input', filterStations);
+            document.getElementById('operator-filter').addEventListener('change', filterStations);
+            document.getElementById('motorway-filter').addEventListener('change', filterStations);
+            document.getElementById('food-filter').addEventListener('change', filterStations);
+            document.getElementById('clear-filters').addEventListener('click', clearFilters);
+        }
+
+        function filterStations() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const operatorFilter = document.getElementById('operator-filter').value;
+            const motorwayFilter = document.getElementById('motorway-filter').value;
+            const foodFilter = document.getElementById('food-filter').value;
+
+            filteredStations = serviceStations.filter(station => {
+                const matchesSearch = station.name.toLowerCase().includes(searchTerm) ||
+                                    station.motorway.toLowerCase().includes(searchTerm) ||
+                                    station.location.toLowerCase().includes(searchTerm);
+
+                const matchesOperator = !operatorFilter || station.operator === operatorFilter;
+                const matchesMotorway = !motorwayFilter || station.motorway === motorwayFilter;
+                const matchesFood = !foodFilter || 
+                    (station.facilities.food_outlets && station.facilities.food_outlets.includes(foodFilter));
+
+                return matchesSearch && matchesOperator && matchesMotorway && matchesFood;
+            });
+
+            updateDisplay();
+        }
+
+        function clearFilters() {
+            document.getElementById('search').value = '';
+            document.getElementById('operator-filter').value = '';
+            document.getElementById('motorway-filter').value = '';
+            document.getElementById('food-filter').value = '';
+            
+            filteredStations = [...serviceStations];
+            updateDisplay();
+        }
+
+        function updateDisplay() {
+            updateStats();
+            
+            if (currentView === 'map') {
+                addMarkersToMap();
+            } else {
+                updateStationList();
+            }
+        }
+
+        function updateStats() {
+            const totalStations = serviceStations.length;
+            const visibleStations = filteredStations.length;
+            const stationsWithUrls = filteredStations.filter(s => s.website_url).length;
+            const operators = [...new Set(filteredStations.map(s => s.operator))].length;
+
+            document.getElementById('total-stations').textContent = totalStations;
+            document.getElementById('visible-stations').textContent = visibleStations;
+            document.getElementById('stations-with-urls').textContent = stationsWithUrls;
+            document.getElementById('operators-count').textContent = operators;
+            document.getElementById('results-count').textContent = `${visibleStations} stations`;
+        }
+
+        function updateStationList() {
+            const stationList = document.getElementById('station-list');
+            
+            stationList.innerHTML = filteredStations.map(station => {
+                const foodOutlets = station.facilities.food_outlets || [];
+                return `
+                    <div class="station-item" data-station="${station.name}" onclick="highlightStationOnMap('${station.name}')">
+                        <div class="station-name">${station.name}</div>
+                        <div class="station-info">
+                            <span class="info-tag motorway-tag">${station.motorway}</span>
+                            <span class="info-tag operator-tag">${station.operator}</span>
+                        </div>
+                        <div style="color: #666; font-size: 0.9rem;">
+                            📍 ${station.location}
+                        </div>
+                        ${foodOutlets.length > 0 ? `
+                            <div class="food-brands">
+                                ${foodOutlets.slice(0, 4).map(outlet => 
+                                    `<span class="food-brand">${outlet}</span>`
+                                ).join('')}
+                                ${foodOutlets.length > 4 ? `<span class="food-brand">+${foodOutlets.length - 4} more</span>` : ''}
+                            </div>
+                        ` : ''}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function showMapView() {
+            currentView = 'map';
+            document.querySelector('.toggle-btn.active').classList.remove('active');
+            document.querySelector('.toggle-btn').classList.add('active');
+            document.getElementById('sidebar').classList.remove('show');
+            
+            // Ensure map is visible and re-render
+            setTimeout(() => {
+                map.invalidateSize();
+                addMarkersToMap();
+            }, 100);
+        }
+
+        function showListView() {
+            currentView = 'list';
+            document.querySelector('.toggle-btn.active').classList.remove('active');
+            document.querySelectorAll('.toggle-btn')[1].classList.add('active');
+            document.getElementById('sidebar').classList.add('show');
+            updateStationList();
+        }
+
+        function highlightStationOnMap(stationName) {
+            const station = filteredStations.find(s => s.name === stationName);
+            if (station && station.coordinates.latitude && station.coordinates.longitude) {
+                map.setView([station.coordinates.latitude, station.coordinates.longitude], 12);
+                
+                // Find and open the popup for this station
+                stationMarkers.forEach(marker => {
+                    const popup = marker.getPopup();
+                    if (popup && popup.getContent().includes(stationName)) {
+                        marker.openPopup();
+                    }
+                });
+            }
+        }
+
+        function highlightStationInSidebar(stationName) {
+            // Remove existing highlights
+            document.querySelectorAll('.station-item.highlighted').forEach(item => {
+                item.classList.remove('highlighted');
+            });
+            
+            // Add highlight to the clicked station
+            const stationItem = document.querySelector(`[data-station="${stationName}"]`);
+            if (stationItem) {
+                stationItem.classList.add('highlighted');
+                stationItem.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,5163 @@
+{
+  "metadata": {
+    "last_updated": "2025-08-16T15:47:22.478894",
+    "total_stations": 102,
+    "successful_urls": 102,
+    "url_success_rate": "100.0%",
+    "data_source": "Enhanced CSV + Real Website Scraping v2",
+    "operators_supported": [
+      "Moto",
+      "Welcome Break",
+      "RoadChef",
+      "Extra MSA",
+      "Westmorland"
+    ],
+    "scraping_features": [
+      "Real website URL discovery",
+      "Enhanced brand detection (Greggs, M&S, Krispy Kreme)",
+      "Multiple search patterns per brand",
+      "Meta tag and alt text searching",
+      "Intelligent fallback data"
+    ],
+    "manual_url_update": {
+      "update_date": "2025-08-16T18:19:22.960472",
+      "manually_added_urls": 44,
+      "skipped_stations": 0,
+      "total_with_urls_after_update": 102
+    },
+    "facility_rescrape": {
+      "rescrape_date": "2025-08-16T18:19:08.444621",
+      "rescraped_stations": 44,
+      "enhanced_stations": 5,
+      "note": "Re-scraped facilities for manually added URLs while preserving existing data"
+    },
+    "fast_facility_update": {
+      "update_date": "2025-08-16T23:07:06.825765",
+      "total_stations": 102,
+      "processed_stations": 101,
+      "enhanced_stations": 77,
+      "failed_scrapes": 0,
+      "method": "Concurrent processing with optimized detection"
+    }
+  },
+  "service_stations": [
+    {
+      "name": "Abington Services M74",
+      "motorway": "M74",
+      "location": "at J13",
+      "postcode": "ML12 6RG",
+      "coordinates": {
+        "longitude": -3.6984713,
+        "latitude": 55.5074835
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Cars free for the first 2 hours then £5 for up to 6 hours on site then £12 for up to 24Hr periods. \nHGVs £24 with a £9 meal voucher and £20 without a meal voucher",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/abington/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Annandale Water Services A74(M)",
+      "motorway": "A74(M)",
+      "location": "at J16",
+      "postcode": "DG11 1HD",
+      "coordinates": {
+        "longitude": -3.4128154,
+        "latitude": 55.2198924
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "Parking Free for up to 2 hours after which time the following charges apply for up to 24 hours\nCars £10\nHGV £18\nHGV with £10 food voucher £20\nCaravans/Medium Goods Vehicles/Large Motor Homes £18",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/annandale-water",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Baldock Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J10 and from A507",
+      "postcode": "SG7 5TR",
+      "coordinates": {
+        "longitude": -0.2051029,
+        "latitude": 52.014611
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Extra MSA",
+      "parking_charges": "First two hours free for all vehicles",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/baldock",
+      "facilities": {
+        "food_outlets": [
+          "Chopstix",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "McDonald's",
+          "Starbucks"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Children Play Area",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Beaconsfield Services M40",
+      "motorway": "M40",
+      "location": "at J2 and from A355",
+      "postcode": "HP9 2SE",
+      "coordinates": {
+        "longitude": -0.6301183,
+        "latitude": 51.5879345
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Extra MSA",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/beaconsfield",
+      "facilities": {
+        "food_outlets": [
+          "Chopstix",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Leon",
+          "McDonald's",
+          "Nando's",
+          "Pizza Express",
+          "Starbucks"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Birch Services M62",
+      "motorway": "M62",
+      "location": "between junctions J18-19",
+      "postcode": "OL10 2HQ",
+      "coordinates": {
+        "longitude": -2.2341856,
+        "latitude": 53.5678243
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Car - £12.50, HGV with a food voucher - £21.50, without a voucher - £20.00 after two hours",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/birch-eastbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Birchanger Green Services M11",
+      "motorway": "M11",
+      "location": "at J8 and from A120",
+      "postcode": "CM23 5QZ",
+      "coordinates": {
+        "longitude": 0.1917148,
+        "latitude": 51.8719626
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Parking is free of charge to all customers for the first 2 hours, thereafter charges apply:. Cars: £10.00. Caravans, Coaches and HGVs: £23.50�including £8.00 meal voucher or £21.00 without voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/birchanger-green/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Blackburn with Darwen Services M65",
+      "motorway": "M65",
+      "location": "at J4 and from A666",
+      "postcode": "BB3 0AT",
+      "coordinates": {
+        "longitude": -2.479898,
+        "latitude": 53.7132113
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Extra MSA",
+      "parking_charges": "Parking is free to all customers for the first 2 hours, thereafter charges apply to all vehicles of £",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/blackburn-with-darwen-services-m65-j4/",
+      "facilities": {
+        "food_outlets": [
+          "Chopstix",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "Leon",
+          "McDonald's",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Meeting Rooms",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Blyth Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J34",
+      "postcode": "S81 8HG",
+      "coordinates": {
+        "longitude": -1.0635325,
+        "latitude": 53.3874722
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13) - Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/blyth/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Bothwell Services M74",
+      "motorway": "M74",
+      "location": "between junctions J4-5",
+      "postcode": "G71 8BG",
+      "coordinates": {
+        "longitude": -4.0649819,
+        "latitude": 55.8134195
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "RoadChef",
+      "parking_charges": "Parking free for up to 2 hours, after which time the following charges apply\nCars £12\nHGV £19\n(HGV with £10 food voucher £21)\nCaravans/Medium Goods Vehicles/Large Motor Homes £19",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/bothwell",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Bridgwater Services M5",
+      "motorway": "M5",
+      "location": "at J24 and from A38",
+      "postcode": "TA6 6TS",
+      "coordinates": {
+        "longitude": -2.9985461,
+        "latitude": 51.1047788
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Cars - £12 for 24hrs, HGV - £17, HGV with a £9 food voucher £18.50",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/bridgwater/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Burton-in-Kendal Services M6",
+      "motorway": "M6",
+      "location": "between junctions J35-36",
+      "postcode": "LA6 1JF",
+      "coordinates": {
+        "longitude": -2.7362851,
+        "latitude": 54.1790888
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13), Car: £8",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/burton-in-kendal/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Burtonwood Services M62",
+      "motorway": "M62",
+      "location": "between junctions J8-9",
+      "postcode": "WA5 3AX",
+      "coordinates": {
+        "longitude": -2.6384365,
+        "latitude": 53.4179418
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £10.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £18.50 including a £7.00 meal voucher or £16.00 with no voucher",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/burton/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Cambridge Services A14",
+      "motorway": "A14",
+      "location": "14 miles north of Cambridge",
+      "postcode": "CB23 4WU",
+      "coordinates": {
+        "longitude": -0.0115099,
+        "latitude": 52.2698506
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Extra MSA",
+      "parking_charges": "Three hours free parking for all vehicles. £28 per 24hrs after that.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/cambridge",
+      "facilities": {
+        "food_outlets": [
+          "Chopstix",
+          "Costa Coffee",
+          "EAT",
+          "KFC",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Children Play Area",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Cardiff Gate Services M4",
+      "motorway": "M4",
+      "location": "at J30 and from A4232 Pentwyn Link Road",
+      "postcode": "CF23 8RA",
+      "coordinates": {
+        "longitude": -3.1321032,
+        "latitude": 51.5389948
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Car - 24 Hours - £10\nHGV - 24 Hours - £16 with Food\nHGC - 24 Hours - £14 without Food",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/cardiff-gate/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Cardiff West Services M4",
+      "motorway": "M4",
+      "location": "at J33 and from A4232",
+      "postcode": "CF72 8SA",
+      "coordinates": {
+        "longitude": -3.3096233,
+        "latitude": 51.5086283
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "£12.50 car,\n£17.50 HGV,\n£19.00 HGV with food voucher",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/cardiff-west/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Charnock Richard Services M6",
+      "motorway": "M6",
+      "location": "between junctions J27-28",
+      "postcode": "PR7 5LR",
+      "coordinates": {
+        "longitude": -2.6918882,
+        "latitude": 53.630861
+      },
+      "type": "Shared main facilities building but separate car parks and access for each carriageway",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £8.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £17.50, including a £7.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/charnock-richard/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Cherwell Valley Services M40",
+      "motorway": "M40",
+      "location": "at J10 and from A43",
+      "postcode": "OX27 7RD",
+      "coordinates": {
+        "longitude": -1.201172,
+        "latitude": 51.950015
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Cars £12 for 24hrs, HGV £22 parking only & £23.50 with £9 meal voucher",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/cherwell-valley/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Chester Services M56",
+      "motorway": "M56",
+      "location": "at J14 and from A5117",
+      "postcode": "CH2 4QZ",
+      "coordinates": {
+        "longitude": -2.8050832,
+        "latitude": 53.2682334
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "First two hours free for all vehicles, after which cars must pay £ and HGVs, caravans and coaches £, or £ to include a £ food voucher.\n\nPrices are paid using PayByPhone - more details or in the shop or restaurant. The location code is 5267.\n\nThe fees are strictly enforced by CP Plus.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/chester",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Chieveley Services M4",
+      "motorway": "M4",
+      "location": "at J13",
+      "postcode": "RG189XX",
+      "coordinates": {
+        "longitude": -1.3135076,
+        "latitude": 51.4490357
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "£16 for 24 hours long stay behind Travelodge, pay using PayByPhone system and credit/debit card\n£15 for 24 hours short stay in main car park to the right pay in WHS or EDC",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/chieveley/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Clacket Lane Services M25",
+      "motorway": "M25",
+      "location": "between junctions J5-6 and from Clacket Lane",
+      "postcode": "TN16 2ER",
+      "coordinates": {
+        "longitude": 0.0381587,
+        "latitude": 51.2723919
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "RoadChef",
+      "parking_charges": "Free for 2 hours after which time the following charges apply for up to 24 hours \nCars £12\nHGV £26\nHGV with £10 food voucher £30\nCaravans/Medium Goods Vehicles/large Motor Homes £26",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Cobham Services M25",
+      "motorway": "M25",
+      "location": "between junctions J9 - 10",
+      "postcode": "KT11 3DB",
+      "coordinates": {
+        "longitude": -0.4082989,
+        "latitude": 51.3042205
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Extra MSA",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/cobham",
+      "facilities": {
+        "food_outlets": [
+          "Chopstix",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Leon",
+          "McDonald's",
+          "Nando's",
+          "Pizza Express",
+          "Pret A Manger",
+          "Starbucks"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Corley Services M6",
+      "motorway": "M6",
+      "location": "between junctions J3-4",
+      "postcode": "CV7 8NR",
+      "coordinates": {
+        "longitude": -1.5478013,
+        "latitude": 52.4717224
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £10.00. Caravans, Coaches and HGVs: £28, including a £10.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/corley/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Cullompton Services M5",
+      "motorway": "M5",
+      "location": "at J28 and from A373, B3181",
+      "postcode": "EX15",
+      "coordinates": {
+        "longitude": -3.3869863,
+        "latitude": 50.8632186
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Extra MSA",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/cullompton",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "EAT",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Derby South Services Eastbound A50",
+      "motorway": "A50",
+      "location": "2 miles east of junction with M1",
+      "postcode": "DE72 2WA",
+      "coordinates": {
+        "longitude": -1.3702639,
+        "latitude": 52.8679425
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Welcome Break",
+      "parking_charges": "Parking is free to all customers for the first 2 hours, thereafter charges apply:. Cars £6.00, including a £2 meal voucher. HGV, Caravans & Coaches £14.00, including a £6 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Derby South Services Eastbound A50 A50",
+      "is_pair": true,
+      "website_url": "https://welcomebreak.co.uk/locations/derby/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Derby South Services Westbound A50",
+      "motorway": "A50",
+      "location": "2 miles east of junction with M1",
+      "postcode": "",
+      "coordinates": {
+        "longitude": -1.3702639,
+        "latitude": 52.8679425
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Welcome Break",
+      "parking_charges": "Parking is free to all customers for the first 2 hours, thereafter charges apply:. Cars £6.00, including a £2 meal voucher. HGV, Caravans & Coaches £14.00, including a £6 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Derby South Services Westbound A50 A50",
+      "is_pair": true,
+      "website_url": "https://welcomebreak.co.uk/locations/derby/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Doncaster North Services M18",
+      "motorway": "M18",
+      "location": "at J5 and from M180",
+      "postcode": "DN8 5GS",
+      "coordinates": {
+        "longitude": -0.9948338,
+        "latitude": 53.5922164
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £16 (without voucher: £14) - Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Donington Park Services M1",
+      "motorway": "M1",
+      "location": "23A and from A42, M42 and A50",
+      "postcode": "DE74 2TN",
+      "coordinates": {
+        "longitude": -1.3106673,
+        "latitude": 52.8216948
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £16 (without voucher: £14) - Car: £10",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/donington-park/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Durham Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J61 and from A688, A177",
+      "postcode": "DH6 5NP",
+      "coordinates": {
+        "longitude": -1.5253505,
+        "latitude": 54.728792
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £\nHGV £\nHGV with £ food voucher £\nCaravans/Medium Goods Vehicles/Large Motor Homes £",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/durham",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Exeter Services M5",
+      "motorway": "M5",
+      "location": "at J30",
+      "postcode": "EX2 7HF",
+      "coordinates": {
+        "longitude": -3.4661263,
+        "latitude": 50.7166648
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 Hours\nCar Park: £12.50 (2-24hrs)\nHGV with food voucher: £23.50\n(food voucher value: £9.00)\nHGV without food voucher: £22.00\nCaravans / Motorhomes: £22.00",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/exeter/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Ferrybridge Services M62",
+      "motorway": "M62",
+      "location": "at J33",
+      "postcode": "WF11 OAF",
+      "coordinates": {
+        "longitude": -1.2693176,
+        "latitude": 53.697522
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £21.00 (without voucher: £19.50) - Car: £12",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/ferrybridge/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Fleet Services M3",
+      "motorway": "M3",
+      "location": "between junctions J4A-5",
+      "postcode": "GU51 1AA",
+      "coordinates": {
+        "longitude": -0.8586517,
+        "latitude": 51.2955966
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £11.00. Caravans, Coaches and HGVs: £23.50, including a £8.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/fleet/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Frankley Services M5",
+      "motorway": "M5",
+      "location": "between junctions J3-4",
+      "postcode": "B32 4AR",
+      "coordinates": {
+        "longitude": -2.0205212,
+        "latitude": 52.4290205
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Moto",
+      "parking_charges": "Car £12.50\nHGV with meal vouchers £22.50\nHGV withoug meal vouchers £21.00",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/frankley-southbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Gloucester Services Northbound M5",
+      "motorway": "M5",
+      "location": "between junctions J12-11a",
+      "postcode": "GL4 0DN",
+      "coordinates": {
+        "longitude": -2.2272466,
+        "latitude": 51.8192639
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Westmorland",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Gloucester Services Northbound M5 M5",
+      "is_pair": true,
+      "website_url": "https://gloucesterservices.com/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "EAT"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Spar"
+        ],
+        "amenities": [
+          "Disabled Access",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Gloucester Services Southbound M5",
+      "motorway": "M5",
+      "location": "between junctions J11a-12",
+      "postcode": "GL4 0DN",
+      "coordinates": {
+        "longitude": -2.2248559,
+        "latitude": 51.8182682
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Westmorland",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Gloucester Services Southbound M5 M5",
+      "is_pair": true,
+      "website_url": "https://gloucesterservices.com/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "EAT"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Spar"
+        ],
+        "amenities": [
+          "Disabled Access",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Gordano Services M5",
+      "motorway": "M5",
+      "location": "at J19 and from A361",
+      "postcode": "BS20 7XG",
+      "coordinates": {
+        "longitude": -2.7101807,
+        "latitude": 51.4775676
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £10.00. Caravans, Coaches and HGVs: £16.00.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/gordano/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Grantham North Services A1",
+      "motorway": "A1",
+      "location": "Gonerby Moor and from B1174 Great North Road",
+      "postcode": "NG32 2AB",
+      "coordinates": {
+        "longitude": -0.6810522,
+        "latitude": 52.9480418
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £18 (without voucher: £16), Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/grantham-north/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Gretna Green Services M74",
+      "motorway": "M74",
+      "location": "between junctions J21-22",
+      "postcode": "DG16 5HQ",
+      "coordinates": {
+        "longitude": -3.085129,
+        "latitude": 55.0079577
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Parking is free to all customers for the first 2 hours, thereafter charges apply:. Cars £8.00, including a £2 meal voucher. HGV, Caravans & Coaches £18.50, including a £7 meal voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/gretna-green/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Hamilton Services M74",
+      "motorway": "M74",
+      "location": "between junctions J5-6",
+      "postcode": "ML3 6JW",
+      "coordinates": {
+        "longitude": -4.037042,
+        "latitude": 55.7871368
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £10\nHGV £20\nHGV with £10 food voucher £22\nCaravans/Medium Goods Vehicles/Large Motor Homes £20",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/hamilton",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Happendon Services M74",
+      "motorway": "M74",
+      "location": "between junctions J11-12",
+      "postcode": "ML11 0RJ",
+      "coordinates": {
+        "longitude": -3.8247528,
+        "latitude": 55.5829964
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Westmorland",
+      "parking_charges": "HGV £9, Cars £3, Caravans £4",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://cairnlodgeservices.com/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "EAT",
+          "Farm Shop Restaurant"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Farm Shop",
+          "Spar"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Visitor Centre",
+          "WiFi"
+        ],
+        "services": [
+          "Farm-to-Table",
+          "Local Sourcing"
+        ]
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Hartshead Moor Services M62",
+      "motorway": "M62",
+      "location": "between junctions J25-26",
+      "postcode": "HD6 4JX",
+      "coordinates": {
+        "longitude": -1.7490003,
+        "latitude": 53.7131327
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "Parking is free to all customers for the first 2 hours, thereafter charges apply. Cars £8.00, including a £2 meal voucher. HGV, Caravans & Coaches £21.00, including a £7 meal voucher..",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/hartshead-moor/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Heart of Scotland M8",
+      "motorway": "M8",
+      "location": "between junctions J4-5",
+      "postcode": "ML7 5TT",
+      "coordinates": {
+        "longitude": -3.7608489,
+        "latitude": 55.863811
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "BP Connect",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://map.bp.com/en-GB/GB/petrol-station/shotts/harthill-south-sf-connect-mwsa/4054",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "McDonald's",
+          "Nando's"
+        ],
+        "retail_shops": [],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Heston Services M4",
+      "motorway": "M4",
+      "location": "between junctions J2-3",
+      "postcode": "TW5 9NB",
+      "coordinates": {
+        "longitude": -0.3947451,
+        "latitude": 51.4884861
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £20 (without voucher: £18.50), Car: £8",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/heston-westbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Hilton Park Services M6",
+      "motorway": "M6",
+      "location": "between junctions J10A-11",
+      "postcode": "WV11 2AT",
+      "coordinates": {
+        "longitude": -2.0590448,
+        "latitude": 52.6431567
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "The first 2 hours free. Site is now managed by CP-Plus. This is a camera operating system which takes a photo of your vehicle on the way in to the services and then again on the way out. if you haven't paid for parking and have stayed for longer than 2 hours, you will be sent a fine through the post. HGV fine = £250\n          Car fine - £80\n\nHGV: Parking with Food £20\n     Parking Without Food £18",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/hilton-park-southbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Hopwood Park Services M42",
+      "motorway": "M42",
+      "location": "at J2",
+      "postcode": "B48 7AU",
+      "coordinates": {
+        "longitude": -1.9485568,
+        "latitude": 52.3635603
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £10.00. Caravans, Coaches and HGVs: £22.50, including a £8.00 meal voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/hopwood/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Keele Services M6",
+      "motorway": "M6",
+      "location": "between junctions J15-16",
+      "postcode": "ST5 5HG",
+      "coordinates": {
+        "longitude": -2.293177,
+        "latitude": 52.9939241
+      },
+      "type": "Shared main facilities building but separate car parks and access for each carriageway",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £10.00. Caravans, Coaches and HGVs: £20.00, including a £7.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/keele/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Killington Lake Services M6",
+      "motorway": "M6",
+      "location": "between junctions J36-37 southbound",
+      "postcode": "LA8 0NW",
+      "coordinates": {
+        "longitude": -2.6376176,
+        "latitude": 54.3141921
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "RoadChef",
+      "parking_charges": "Free for the first two hours. Then £12 for 24 hours.\nHGV's £19 a night or £21 with £10 food voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/killington-lake",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Kinross Services M90",
+      "motorway": "M90",
+      "location": "at J6",
+      "postcode": "KY13 0NQ",
+      "coordinates": {
+        "longitude": -3.4421378,
+        "latitude": 56.2097442
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13) - Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/kinross/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Knutsford Services M6",
+      "motorway": "M6",
+      "location": "between junctions J18-19",
+      "postcode": "WA16 0TL",
+      "coordinates": {
+        "longitude": -2.4041875,
+        "latitude": 53.3007134
+      },
+      "type": "Shared main facilities building but separate car parks and access for each carriageway",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £20 (without voucher: £18). Car: 2 to 4 hours £10, up to 6 hours £15, up to 8 hours £20, up to 24 hours £35.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/knutsford-northbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Lancaster (Forton) Services M6",
+      "motorway": "M6",
+      "location": "between junctions J32-33",
+      "postcode": "LA2 9DU",
+      "coordinates": {
+        "longitude": -2.7629336,
+        "latitude": 53.9617929
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13), Car: £8",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/lancaster-northbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Leicester (Markfield) Services M1",
+      "motorway": "M1",
+      "location": "at J22 and from A50, A511",
+      "postcode": "LE67 9PP",
+      "coordinates": {
+        "longitude": -1.2975539,
+        "latitude": 52.696453
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Euro Garages",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13) - Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/leicester-forest-east/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Leicester Forest East Services M1",
+      "motorway": "M1",
+      "location": "between junctions J21-22",
+      "postcode": "LE3 3GB",
+      "coordinates": {
+        "longitude": -1.207531,
+        "latitude": 52.6193447
+      },
+      "type": "Shared main facilities building but separate car parks and access for each carriageway",
+      "operator": "Welcome Break",
+      "parking_charges": "Parking is free to all customers for the first 2 hours, thereafter charges apply:. Cars £10.00. HGV, Caravans & Coaches £20.00, including a £7.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/leicester-forest-east/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Leigh Delamere Services M4",
+      "motorway": "M4",
+      "location": "between junctions J17-18",
+      "postcode": "SN14 6LB",
+      "coordinates": {
+        "longitude": -2.1620076,
+        "latitude": 51.5097528
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/leigh-delamere-westbound",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "London Gateway Services M1",
+      "motorway": "M1",
+      "location": "between junctions J2-4",
+      "postcode": "NW7 3HU",
+      "coordinates": {
+        "longitude": -0.2665066,
+        "latitude": 51.6311605
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Trucks £23 no meal voucher or £26 with a meal voucher",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/london/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Lymm Services M6",
+      "motorway": "M6",
+      "location": "at J20 and from A50",
+      "postcode": "WA13 OSP",
+      "coordinates": {
+        "longitude": -2.5076485,
+        "latitude": 53.3588856
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "£15 for HGV and £16 for cars",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/lymm/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Magor Services M4",
+      "motorway": "M4",
+      "location": "23A",
+      "postcode": "NP26 3YL",
+      "coordinates": {
+        "longitude": -2.8389324,
+        "latitude": 51.5883225
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "Up to 2 hours free, then the following charges apply for up to 24 hours. Cars and Small Vans £10, Caravans, Medium Goods Vehicles and Large Motor Homes £16. HGVs £25 with £10 Food Voucher",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/magor",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Maidstone Services M20",
+      "motorway": "M20",
+      "location": "at J8 and from A20",
+      "postcode": "ME17 1SS",
+      "coordinates": {
+        "longitude": 0.6114595,
+        "latitude": 51.2671058
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the folowing charges apply for up to 24 hours\nCars £20\nHGV £26\nHGV with £10 food voucher £30\nCaravans/ Medium Goods Vehicles/Large Motor Homes £26",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/maidstone",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Medway Services M2",
+      "motorway": "M2",
+      "location": "between junctions J4-5",
+      "postcode": "ME8 8PQ",
+      "coordinates": {
+        "longitude": 0.6055594,
+        "latitude": 51.3415404
+      },
+      "type": "Shared main facilities building but separate car parks and access for each carriageway",
+      "operator": "Moto",
+      "parking_charges": "HGV - £20.50 parking alone, £22 for parking and a £9 food voucher that can be used in Costa or for the King of the Day meal in Burger King.\nCar - £10 for 24 hours.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/medway-eastbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Membury Services M4",
+      "motorway": "M4",
+      "location": "between junctions J14-15",
+      "postcode": "RG17 7TZ",
+      "coordinates": {
+        "longitude": -1.5596909,
+        "latitude": 51.4824011
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £11.00. Caravans, Coaches and HGVs: £21.00, including a £7.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/membury/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Michaelwood Services M5",
+      "motorway": "M5",
+      "location": "between junctions J13-14",
+      "postcode": "GL11 6DD",
+      "coordinates": {
+        "longitude": -2.4297848,
+        "latitude": 51.65677
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £10.00. Caravans, Coaches and HGVs: £18.50 including meal voucher or £16.00 without.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/michaelwood/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Newport Pagnell Services M1",
+      "motorway": "M1",
+      "location": "between junctions J14-15",
+      "postcode": "MK16 8DS",
+      "coordinates": {
+        "longitude": -0.750573,
+        "latitude": 52.0833896
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for 2 hours, \nCars & Vans £12.00.\nHGV & Caravan £22.00 or £25.00 with a £9 food voucher",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/newport-pagnell/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Northampton Services M1",
+      "motorway": "M1",
+      "location": "15A and from A43",
+      "postcode": "NN4 9QY",
+      "coordinates": {
+        "longitude": -0.9459884,
+        "latitude": 52.2092968
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £20\nHGV £21\nHGV with £10 food voucher £23\nCaravans/Medium Goods Vehicles/Large Motor Homes £21",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/northampton",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Norton Canes Services M6 Toll",
+      "motorway": "M6 Toll",
+      "location": "between junctions JT6-T7",
+      "postcode": "WS11 9UX",
+      "coordinates": {
+        "longitude": -1.9698975,
+        "latitude": 52.6649138
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours Cars £10 HGV £19 HGV with food voucher £21 Caravans/Medium Goods Vehicles/Large Motor Homes £19",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/norton-canes",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Oxford Services M40",
+      "motorway": "M40",
+      "location": "8A and from A40, A418",
+      "postcode": "OX33 1JN",
+      "coordinates": {
+        "longitude": -1.0992414,
+        "latitude": 51.7381619
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £8.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £22.50, including a £8.00 meal voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/oxford/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Pease Pottage Services M23",
+      "motorway": "M23",
+      "location": "at J11 and from A264",
+      "postcode": "RH11 9AE",
+      "coordinates": {
+        "longitude": -0.2025141,
+        "latitude": 51.0833157
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £20 (Food voucher value: 7.50) Without voucher: £18 Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/pease-pottage/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Peterborough Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J17 and from A605",
+      "postcode": "PE7 3UQ",
+      "coordinates": {
+        "longitude": -0.323001,
+        "latitude": 52.5315878
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Extra MSA",
+      "parking_charges": "Up to 2 hours free parking",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://extraservices.co.uk/locations/peterborough",
+      "facilities": {
+        "food_outlets": [
+          "Chopstix",
+          "Costa Coffee",
+          "EAT",
+          "KFC",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Children Play Area",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Pont Abraham Services M4",
+      "motorway": "M4",
+      "location": "at J49 and from A48, A483",
+      "postcode": "SA4 0FU",
+      "coordinates": {
+        "longitude": -4.0682952,
+        "latitude": 51.7469245
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £10\nHGV £21\nHGV with £10 food voucher £23\nCaravans/Medium Goods Vehicles/Large Motor Homes £17",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/pont-abraham",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Reading Services M4",
+      "motorway": "M4",
+      "location": "between junctions J11-12",
+      "postcode": "RG30 3UQ",
+      "coordinates": {
+        "longitude": -1.0358717,
+        "latitude": 51.4250061
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Moto",
+      "parking_charges": "Car £10,\nHGV £24",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/reading-westbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Rivington Services M61",
+      "motorway": "M61",
+      "location": "between junctions J6-7 and from none",
+      "postcode": "BL6 5UZ",
+      "coordinates": {
+        "longitude": -2.5755411,
+        "latitude": 53.6004693
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Euro Garages",
+      "parking_charges": "£8 for cars or small vans.\n£19.99 for big vans, coaches and trucks with meal voucher or £15.00 without voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://eg-otm.com/locations/Bolton/RIVS",
+      "facilities": {
+        "food_outlets": [
+          "EAT",
+          "Greggs",
+          "Starbucks",
+          "Subway"
+        ],
+        "retail_shops": [
+          "Spar"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Disabled Access",
+          "Fuel Station",
+          "Parking",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Rownhams Services M27",
+      "motorway": "M27",
+      "location": "between junctions J3-4",
+      "postcode": "SO16 8AP",
+      "coordinates": {
+        "longitude": -1.4510085,
+        "latitude": 50.9574755
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours: Cars £10 HGV £21, HGV with £10 food voucher £27, Caravans/Medium Goods Vehicles/Large Motor Homes £19",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/rownhams-south",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Sandbach Services M6",
+      "motorway": "M6",
+      "location": "between junctions J16-17",
+      "postcode": "CW11 2FZ",
+      "coordinates": {
+        "longitude": -2.3391362,
+        "latitude": 53.1394497
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £10\nHGV £22\nHGV with £10 food voucher £26\nCaravans/Medium Goods Vehicles/Large Motor Homes £22",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/sandbach",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Sarn Park Services M4",
+      "motorway": "M4",
+      "location": "at J36 and from A406, A4063",
+      "postcode": "CF32 9RW",
+      "coordinates": {
+        "longitude": -3.5790382,
+        "latitude": 51.5349379
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £6.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £15.00, including a £6.00 meal voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/sarn/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Scotch Corner Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J57 and from A66",
+      "postcode": "DL10 6PQ",
+      "coordinates": {
+        "longitude": -1.6694666,
+        "latitude": 54.4433037
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. Car/coaches: £8. No HGV parking available at this site.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/scotch-corner/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Sedgemoor Services Northbound M5",
+      "motorway": "M5",
+      "location": "between junctions J21-22 Northbound",
+      "postcode": "BS24 0JL",
+      "coordinates": {
+        "longitude": -2.9258045,
+        "latitude": 51.2699864
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £8.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £17.50, including a £7.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Sedgemoor Services Northbound M5 M5",
+      "is_pair": true,
+      "website_url": "https://welcomebreak.co.uk/locations/sedgemoor/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Sedgemoor Services Southbound M5",
+      "motorway": "M5",
+      "location": "between junctions J21-22",
+      "postcode": "BS26 2UF",
+      "coordinates": {
+        "longitude": -2.9258045,
+        "latitude": 51.2699864
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours Cars £10 HGV £18 HGV with £10 food voucher £22 Caravans/Medium Goods Vehicles/Large Motor Homes £18",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Sedgemoor Services Southbound M5 M5",
+      "is_pair": true,
+      "website_url": "https://www.roadchef.com/motorway-services/sedgemoor-south",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Severn View Services M48",
+      "motorway": "M48",
+      "location": "at J1",
+      "postcode": "BS35 4BH",
+      "coordinates": {
+        "longitude": -2.6231769,
+        "latitude": 51.6034985
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13) - Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/severn-view/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "South Mimms Services M25",
+      "motorway": "M25",
+      "location": "at J23 and from A1(M), A1, A1081",
+      "postcode": "EN6 3QQ",
+      "coordinates": {
+        "longitude": -0.2242572,
+        "latitude": 51.6874524
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "2 hours free - then up to 24 hours Cars £15,  Coaches and commercial vehicles £24 ( parking only)  or £28 with meal voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/south-mimms/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Southwaite Services M6",
+      "motorway": "M6",
+      "location": "between junctions J41-42",
+      "postcode": "CA4 0NT",
+      "coordinates": {
+        "longitude": -2.8735537,
+        "latitude": 54.7985568
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £15 (without voucher: £13) - Car: £8",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/southwaite-southbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Stafford Services Northbound M6",
+      "motorway": "M6",
+      "location": "between junctions J14-15",
+      "postcode": "ST15 0EU",
+      "coordinates": {
+        "longitude": -2.1761901,
+        "latitude": 52.8861198
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Moto",
+      "parking_charges": "* HGV with food voucher: £21\n    * HGV without food voucher: £14\n    * Car Park: Free (up to 2hrs)\n    * Car Park: £8 (2-24hrs)",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Stafford Services Northbound M6 M6",
+      "is_pair": true,
+      "website_url": "https://moto-way.com/services/stafford-northbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Stafford Services Southbound M6",
+      "motorway": "M6",
+      "location": "between junctions J14-15",
+      "postcode": "ST15 0XE",
+      "coordinates": {
+        "longitude": -2.1638335,
+        "latitude": 52.8730257
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "RoadChef",
+      "parking_charges": "2 Hours Free, £20 HGV Parking with Food Voucher, £18 HGV Parking without food voucher, Cars £12",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Stafford Services Southbound M6 M6",
+      "is_pair": true,
+      "website_url": "https://www.roadchef.com/motorway-services/stafford-south",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Stirling Services M9",
+      "motorway": "M9",
+      "location": "at J9 and from A91, A872",
+      "postcode": "FK7 8EU",
+      "coordinates": {
+        "longitude": -3.924159,
+        "latitude": 56.0760998
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Cars free up to 2 hours, Cars £15 - 2-24 hours, HGV without food voucher £22.50, HGV with food voucher £24.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/stirling/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Stop24 Services (Folkestone) M20",
+      "motorway": "M20",
+      "location": "at J11 and from A20, B2068",
+      "postcode": "CT21 4BL",
+      "coordinates": {
+        "longitude": 1.0415873,
+        "latitude": 51.0949477
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Stop 24",
+      "parking_charges": "Cars: First 2 hours free, £5 per 24 hours thereafter.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/folkestone",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Strensham Services M5",
+      "motorway": "M5",
+      "location": "between junctions J7-8 and from M50 northbound",
+      "postcode": "WR8 0BZ",
+      "coordinates": {
+        "longitude": -2.1543635,
+        "latitude": 52.0613874
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £10\nHGV £25\nHGV with £10 food voucher £27\nCaravans/Medium Goods Vehicles/Large Motor Homes £22",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/strensham-south",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Swansea West M4",
+      "motorway": "M4",
+      "location": "at J47",
+      "postcode": "SA4 9GT",
+      "coordinates": {
+        "longitude": -2.1462654,
+        "latitude": 51.512645
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £20.50, Car: £8",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/swansea/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Tamworth Services M42",
+      "motorway": "M42",
+      "location": "at J10 and from a5",
+      "postcode": "B77 5PS",
+      "coordinates": {
+        "longitude": -1.6434032,
+        "latitude": 52.607525
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £21 (without voucher: £19.50) - Car: £12",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/tamworth/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Children Play Area",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Taunton Deane Services M5",
+      "motorway": "M5",
+      "location": "between junctions J25-26",
+      "postcode": "TA3 7PF",
+      "coordinates": {
+        "longitude": -3.1500562,
+        "latitude": 50.9766283
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "RoadChef",
+      "parking_charges": "Free for up to 2 hours, then the following charges apply for up to 24 hours\nCars £10\nHGV £20\nHGV with £10 food voucher £22\nCaravans/Medium Goods Vehicles/Large Motor Homes £17",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/taunton-deane-southbound",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Tebay Services Northbound M6",
+      "motorway": "M6",
+      "location": "between junctions J38-39",
+      "postcode": "CA10 3SB",
+      "coordinates": {
+        "longitude": -2.6101655,
+        "latitude": 54.4511621
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Westmorland",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Tebay Services Northbound M6 M6",
+      "is_pair": true,
+      "website_url": "https://www.tebayservices.com/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "EAT"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Spar"
+        ],
+        "amenities": [
+          "Disabled Access",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Tebay Services Southbound M6",
+      "motorway": "M6",
+      "location": "between junctions J38-39",
+      "postcode": "CA10 3SB",
+      "coordinates": {
+        "longitude": -2.6101655,
+        "latitude": 54.4511621
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Westmorland",
+      "parking_charges": null,
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Tebay Services Southbound M6 M6",
+      "is_pair": true,
+      "website_url": "https://www.tebayservices.com/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "EAT"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Spar"
+        ],
+        "amenities": [
+          "Disabled Access",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Telford Services M54",
+      "motorway": "M54",
+      "location": "at J4 and from A464",
+      "postcode": "TF11 8TG",
+      "coordinates": {
+        "longitude": -2.4037876,
+        "latitude": 52.6772126
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £8.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £17.50, including a £7.00 meal voucher.",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/telford/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Thurrock Services M25",
+      "motorway": "M25",
+      "location": "between junctions J30-31 and from A 13, A1306",
+      "postcode": "RM16 3BG",
+      "coordinates": {
+        "longitude": 0.2695656,
+        "latitude": 51.4923655
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £30 (food voucher value: £10) Without voucher: £28.50. Cars: £15",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/thurrock/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Tibshelf Services M1",
+      "motorway": "M1",
+      "location": "between junctions J28-29",
+      "postcode": "DE55 5TZ",
+      "coordinates": {
+        "longitude": -1.3334762,
+        "latitude": 53.1378409
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "RoadChef",
+      "parking_charges": "Free for the first 2 hours, then the following charges apply for up to 24 hours Cars £12, HGV £20, HGV with £10 food voucher £22, Caravans/Medium Goods Vehicles/Large Motor Homes £20",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/tibshelf-northbound",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Tiverton Services M5",
+      "motorway": "M5",
+      "location": "at J27 and from A361, A38",
+      "postcode": "EX16 7HD",
+      "coordinates": {
+        "longitude": -3.3574801,
+        "latitude": 50.9167416
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Car Park operated by CP Plus. Up to 2 hours free of charge, longer stays (2 hours+) are charged.\n\n2-24 hours: £5",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/tiverton/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Toddington Services M1",
+      "motorway": "M1",
+      "location": "between junctions J11-12",
+      "postcode": "LU5 6HR",
+      "coordinates": {
+        "longitude": -0.5057912,
+        "latitude": 51.947106
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £22 (without voucher: £20.50) - Car: £10",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/toddington-southbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Todhills Rest Area M6",
+      "motorway": "M6",
+      "location": "between junctions J44-45",
+      "postcode": "CA6 4HA",
+      "coordinates": {
+        "longitude": -3.0081874,
+        "latitude": 54.8748213
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. Car: £3 (No HGV parking available)",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/todhills-southbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Parking",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Trowell Services M1",
+      "motorway": "M1",
+      "location": "between junctions J25-26",
+      "postcode": "NG9 3PL",
+      "coordinates": {
+        "longitude": -1.2709822,
+        "latitude": 52.9614206
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £17.50 (without voucher: £15) - Car: £11",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/trowell-northbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Warwick Services Northbound M40",
+      "motorway": "M40",
+      "location": "between junctions J12-13",
+      "postcode": "CV35 0AA",
+      "coordinates": {
+        "longitude": -1.5080404,
+        "latitude": 52.2164894
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Welcome Break",
+      "parking_charges": "Free for two hours, charges apply for longer stays. Cars: £8.00, including a £2.00 meal voucher. Caravans, Coaches and HGVs: £22.50, including a £10.00 meal voucher.",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": "Warwick Services Northbound M40 M40",
+      "is_pair": true,
+      "website_url": "https://welcomebreak.co.uk/locations/warwick/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Warwick Services Southbound M40",
+      "motorway": "M40",
+      "location": "between junctions J12-13",
+      "postcode": "CV35 0AA",
+      "coordinates": {
+        "longitude": -1.5052217,
+        "latitude": 52.2178318
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Welcome Break",
+      "parking_charges": "Cars £8 - Caravan, Commercial vehicle or HGV £21 with no meal voucher or £23.50  with £8 meal voucher",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": "Warwick Services Southbound M40 M40",
+      "is_pair": true,
+      "website_url": "https://welcomebreak.co.uk/locations/warwick/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Washington Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "between junctions J64-65",
+      "postcode": "DH3 2SJ",
+      "coordinates": {
+        "longitude": -1.5615357,
+        "latitude": 54.8895435
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £16 (without voucher: £14) - Car: £8",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/washington-northbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Watford Gap Services M1",
+      "motorway": "M1",
+      "location": "between junctions J16-17",
+      "postcode": "NN6 7UZ",
+      "coordinates": {
+        "longitude": -1.1247226,
+        "latitude": 52.3055489
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "RoadChef",
+      "parking_charges": "Free for the first 2 hours, then the following charges apply for up to 24 hours\nCars £10\nHGV £21\nHGV with £10 food voucher £25\nCaravans/Medium Goods Vehicles/Large Motor Homes £21",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://www.roadchef.com/motorway-services/watford-gap",
+      "facilities": {
+        "food_outlets": [
+          "Costa Coffee",
+          "Greggs",
+          "Krispy Kreme",
+          "Leon",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Cash Machine",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Wetherby Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J46 and from B6164",
+      "postcode": "LS22 5GT",
+      "coordinates": {
+        "longitude": -1.3713072,
+        "latitude": 53.9469521
+      },
+      "type": "Single site, used by traffic in both directions",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours",
+      "has_charge": null,
+      "is_single": true,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/wetherby/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Leon",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "Dog Walking Area",
+          "EV Charging",
+          "Fuel Station",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Winchester Services M3",
+      "motorway": "M3",
+      "location": "between junctions J8-9 and from N/A",
+      "postcode": "SO21 1PP",
+      "coordinates": {
+        "longitude": -1.2573425,
+        "latitude": 51.1178861
+      },
+      "type": "Facilities accessible from one direction only",
+      "operator": "Moto",
+      "parking_charges": "Free for two hours after that the following charges apply HGV / Caravan £23   HGV with food voucher of £9 is £24.50 Car £12.50",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": false,
+      "has_walk": null,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/motorway-services/motorway-services-by-motorway/m3-motorway-services/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Parking",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    },
+    {
+      "name": "Woodall Services M1",
+      "motorway": "M1",
+      "location": "between junctions J30-31",
+      "postcode": "S26 7XR",
+      "coordinates": {
+        "longitude": -1.2856237,
+        "latitude": 53.3153382
+      },
+      "type": "Separate facilities for each carriageway, but linked by a pedestrian footbridge",
+      "operator": "Welcome Break",
+      "parking_charges": "£5 for cars up to 6 hours £12 for cars 24 hours\nFor hgv £24 no food voucher\n£26 pounds for parking with a £9 food voucher",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": true,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://welcomebreak.co.uk/locations/woodall/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Chopstix",
+          "EAT",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger",
+          "Starbucks",
+          "Subway",
+          "Taco Bell",
+          "The Good Breakfast"
+        ],
+        "retail_shops": [
+          "WHSmith",
+          "Waitrose & Partners"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Days Inn",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Ramada",
+          "Showers",
+          "Toilets",
+          "WiFi"
+        ],
+        "services": []
+      }
+    },
+    {
+      "name": "Woolley Edge Services M1",
+      "motorway": "M1",
+      "location": "between junctions J38-39",
+      "postcode": "WF4 4LQ",
+      "coordinates": {
+        "longitude": -1.5492314,
+        "latitude": 53.6219498
+      },
+      "type": "Separate facilities for each carriageway, with no link between them",
+      "operator": "Moto",
+      "parking_charges": "Free for 2 hours, charges apply for longer stays. HGV with food voucher: £20 (without voucher: £18.50), Car: £8",
+      "has_charge": null,
+      "is_single": false,
+      "is_twin": true,
+      "has_walk": false,
+      "pair_name": null,
+      "is_pair": false,
+      "website_url": "https://moto-way.com/services/woolley-edge-southbound/",
+      "facilities": {
+        "food_outlets": [
+          "Burger King",
+          "Costa Coffee",
+          "EAT",
+          "Greggs",
+          "KFC",
+          "Krispy Kreme",
+          "Pret A Manger"
+        ],
+        "retail_shops": [
+          "Boots",
+          "Marks & Spencer",
+          "Spar",
+          "WHSmith"
+        ],
+        "amenities": [
+          "Baby Changing",
+          "Disabled Access",
+          "EV Charging",
+          "Fuel Station",
+          "Hotel",
+          "Parking",
+          "Showers",
+          "Toilets",
+          "Travelodge",
+          "WiFi"
+        ],
+        "services": []
+      },
+      "url_source": "Manual addition"
+    }
+  ]
+}

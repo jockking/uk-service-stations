@@ -1,0 +1,454 @@
+{
+  "metadata": {
+    "extracted_date": "2025-08-16",
+    "total_stations_analyzed": 102,
+    "stations_without_urls": 44,
+    "instructions": [
+      "Fill in the \"suggested_url\" field for each station",
+      "Add any relevant notes in the \"notes\" field",
+      "Save this file and run the URL incorporation script to update the main data"
+    ]
+  },
+  "stations_needing_urls": [
+    {
+      "name": "Annandale Water Services A74(M)",
+      "motorway": "A74(M)",
+      "location": "at J16",
+      "operator": "RoadChef",
+      "postcode": "DG11 1HD",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/annandale-water",
+      "notes": ""
+    },
+    {
+      "name": "Birch Services M62",
+      "motorway": "M62",
+      "location": "between junctions J18-19",
+      "operator": "Moto",
+      "postcode": "OL10 2HQ",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/birch-eastbound/",
+      "notes": ""
+    },
+    {
+      "name": "Blackburn with Darwen Services M65",
+      "motorway": "M65",
+      "location": "at J4 and from A666",
+      "operator": "Extra MSA",
+      "postcode": "BB3 0AT",
+      "current_url": null,
+      "suggested_url": "https://extraservices.co.uk/locations/blackburn-with-darwen-services-m65-j4/",
+      "notes": ""
+    },
+    {
+      "name": "Bothwell Services M74",
+      "motorway": "M74",
+      "location": "between junctions J4-5",
+      "operator": "RoadChef",
+      "postcode": "G71 8BG",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/bothwell",
+      "notes": ""
+    },
+    {
+      "name": "Chester Services M56",
+      "motorway": "M56",
+      "location": "at J14 and from A5117",
+      "operator": "RoadChef",
+      "postcode": "CH2 4QZ",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/chester",
+      "notes": ""
+    },
+    {
+      "name": "Clacket Lane Services M25",
+      "motorway": "M25",
+      "location": "between junctions J5-6 and from Clacket Lane",
+      "operator": "RoadChef",
+      "postcode": "TN16 2ER",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
+      "notes": ""
+    },
+    {
+      "name": "Doncaster North Services M18",
+      "motorway": "M18",
+      "location": "at J5 and from M180",
+      "operator": "Moto",
+      "postcode": "DN8 5GS",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
+      "notes": ""
+    },
+    {
+      "name": "Durham Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "at J61 and from A688, A177",
+      "operator": "RoadChef",
+      "postcode": "DH6 5NP",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/durham",
+      "notes": ""
+    },
+    {
+      "name": "Frankley Services M5",
+      "motorway": "M5",
+      "location": "between junctions J3-4",
+      "operator": "Moto",
+      "postcode": "B32 4AR",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/frankley-southbound/",
+      "notes": ""
+    },
+    {
+      "name": "Hamilton Services M74",
+      "motorway": "M74",
+      "location": "between junctions J5-6",
+      "operator": "RoadChef",
+      "postcode": "ML3 6JW",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/hamilton",
+      "notes": ""
+    },
+    {
+      "name": "Happendon Services M74",
+      "motorway": "M74",
+      "location": "between junctions J11-12",
+      "operator": "Westmorland",
+      "postcode": "ML11 0RJ",
+      "current_url": null,
+      "suggested_url": "https://cairnlodgeservices.com/",
+      "notes": ""
+    },
+    {
+      "name": "Heart of Scotland M8",
+      "motorway": "M8",
+      "location": "between junctions J4-5",
+      "operator": "BP Connect",
+      "postcode": "ML7 5TT",
+      "current_url": null,
+      "suggested_url": "https://map.bp.com/en-GB/GB/petrol-station/shotts/harthill-south-sf-connect-mwsa/4054",
+      "notes": ""
+    },
+    {
+      "name": "Heston Services M4",
+      "motorway": "M4",
+      "location": "between junctions J2-3",
+      "operator": "Moto",
+      "postcode": "TW5 9NB",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/heston-westbound/",
+      "notes": ""
+    },
+    {
+      "name": "Hilton Park Services M6",
+      "motorway": "M6",
+      "location": "between junctions J10A-11",
+      "operator": "Moto",
+      "postcode": "WV11 2AT",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/hilton-park-southbound/",
+      "notes": ""
+    },
+    {
+      "name": "Killington Lake Services M6",
+      "motorway": "M6",
+      "location": "between junctions J36-37 southbound",
+      "operator": "RoadChef",
+      "postcode": "LA8 0NW",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/killington-lake",
+      "notes": ""
+    },
+    {
+      "name": "Knutsford Services M6",
+      "motorway": "M6",
+      "location": "between junctions J18-19",
+      "operator": "Moto",
+      "postcode": "WA16 0TL",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/knutsford-northbound/",
+      "notes": ""
+    },
+    {
+      "name": "Lancaster (Forton) Services M6",
+      "motorway": "M6",
+      "location": "between junctions J32-33",
+      "operator": "Moto",
+      "postcode": "LA2 9DU",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/lancaster-northbound/",
+      "notes": ""
+    },
+    {
+      "name": "Leicester (Markfield) Services M1",
+      "motorway": "M1",
+      "location": "at J22 and from A50, A511",
+      "operator": "Euro Garages",
+      "postcode": "LE67 9PP",
+      "current_url": null,
+      "suggested_url": "https://welcomebreak.co.uk/locations/leicester-forest-east/",
+      "notes": ""
+    },
+    {
+      "name": "Leigh Delamere Services M4",
+      "motorway": "M4",
+      "location": "between junctions J17-18",
+      "operator": "Moto",
+      "postcode": "SN14 6LB",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/leigh-delamere-westbound",
+      "notes": ""
+    },
+    {
+      "name": "Magor Services M4",
+      "motorway": "M4",
+      "location": "23A",
+      "operator": "RoadChef",
+      "postcode": "NP26 3YL",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/magor",
+      "notes": ""
+    },
+    {
+      "name": "Maidstone Services M20",
+      "motorway": "M20",
+      "location": "at J8 and from A20",
+      "operator": "RoadChef",
+      "postcode": "ME17 1SS",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/maidstone",
+      "notes": ""
+    },
+    {
+      "name": "Medway Services M2",
+      "motorway": "M2",
+      "location": "between junctions J4-5",
+      "operator": "Moto",
+      "postcode": "ME8 8PQ",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/medway-eastbound/",
+      "notes": ""
+    },
+    {
+      "name": "Northampton Services M1",
+      "motorway": "M1",
+      "location": "15A and from A43",
+      "operator": "RoadChef",
+      "postcode": "NN4 9QY",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/northampton",
+      "notes": ""
+    },
+    {
+      "name": "Norton Canes Services M6 Toll",
+      "motorway": "M6 Toll",
+      "location": "between junctions JT6-T7",
+      "operator": "RoadChef",
+      "postcode": "WS11 9UX",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/norton-canes",
+      "notes": ""
+    },
+    {
+      "name": "Pont Abraham Services M4",
+      "motorway": "M4",
+      "location": "at J49 and from A48, A483",
+      "operator": "RoadChef",
+      "postcode": "SA4 0FU",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/pont-abraham",
+      "notes": ""
+    },
+    {
+      "name": "Reading Services M4",
+      "motorway": "M4",
+      "location": "between junctions J11-12",
+      "operator": "Moto",
+      "postcode": "RG30 3UQ",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/reading-westbound/",
+      "notes": ""
+    },
+    {
+      "name": "Rivington Services M61",
+      "motorway": "M61",
+      "location": "between junctions J6-7 and from none",
+      "operator": "Euro Garages",
+      "postcode": "BL6 5UZ",
+      "current_url": null,
+      "suggested_url": "https://eg-otm.com/locations/Bolton/RIVS",
+      "notes": ""
+    },
+    {
+      "name": "Rownhams Services M27",
+      "motorway": "M27",
+      "location": "between junctions J3-4",
+      "operator": "RoadChef",
+      "postcode": "SO16 8AP",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/rownhams-south",
+      "notes": ""
+    },
+    {
+      "name": "Sandbach Services M6",
+      "motorway": "M6",
+      "location": "between junctions J16-17",
+      "operator": "RoadChef",
+      "postcode": "CW11 2FZ",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/sandbach",
+      "notes": ""
+    },
+    {
+      "name": "Sedgemoor Services Southbound M5",
+      "motorway": "M5",
+      "location": "between junctions J21-22",
+      "operator": "RoadChef",
+      "postcode": "BS26 2UF",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/sedgemoor-south",
+      "notes": ""
+    },
+    {
+      "name": "Southwaite Services M6",
+      "motorway": "M6",
+      "location": "between junctions J41-42",
+      "operator": "Moto",
+      "postcode": "CA4 0NT",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/southwaite-southbound/",
+      "notes": ""
+    },
+    {
+      "name": "Stafford Services Northbound M6",
+      "motorway": "M6",
+      "location": "between junctions J14-15",
+      "operator": "Moto",
+      "postcode": "ST15 0EU",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/stafford-northbound/",
+      "notes": ""
+    },
+    {
+      "name": "Stafford Services Southbound M6",
+      "motorway": "M6",
+      "location": "between junctions J14-15",
+      "operator": "RoadChef",
+      "postcode": "ST15 0XE",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/stafford-south",
+      "notes": ""
+    },
+    {
+      "name": "Stop24 Services (Folkestone) M20",
+      "motorway": "M20",
+      "location": "at J11 and from A20, B2068",
+      "operator": "Stop 24",
+      "postcode": "CT21 4BL",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/folkestone",
+      "notes": ""
+    },
+    {
+      "name": "Strensham Services M5",
+      "motorway": "M5",
+      "location": "between junctions J7-8 and from M50 northbound",
+      "operator": "RoadChef",
+      "postcode": "WR8 0BZ",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/strensham-south",
+      "notes": ""
+    },
+    {
+      "name": "Taunton Deane Services M5",
+      "motorway": "M5",
+      "location": "between junctions J25-26",
+      "operator": "RoadChef",
+      "postcode": "TA3 7PF",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/taunton-deane-southbound",
+      "notes": ""
+    },
+    {
+      "name": "Tibshelf Services M1",
+      "motorway": "M1",
+      "location": "between junctions J28-29",
+      "operator": "RoadChef",
+      "postcode": "DE55 5TZ",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/tibshelf-northbound",
+      "notes": ""
+    },
+    {
+      "name": "Toddington Services M1",
+      "motorway": "M1",
+      "location": "between junctions J11-12",
+      "operator": "Moto",
+      "postcode": "LU5 6HR",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/toddington-southbound/",
+      "notes": ""
+    },
+    {
+      "name": "Todhills Rest Area M6",
+      "motorway": "M6",
+      "location": "between junctions J44-45",
+      "operator": "Moto",
+      "postcode": "CA6 4HA",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/todhills-southbound/",
+      "notes": ""
+    },
+    {
+      "name": "Trowell Services M1",
+      "motorway": "M1",
+      "location": "between junctions J25-26",
+      "operator": "Moto",
+      "postcode": "NG9 3PL",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/trowell-northbound/",
+      "notes": ""
+    },
+    {
+      "name": "Washington Services A1(M)",
+      "motorway": "A1(M)",
+      "location": "between junctions J64-65",
+      "operator": "Moto",
+      "postcode": "DH3 2SJ",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/washington-northbound/",
+      "notes": ""
+    },
+    {
+      "name": "Watford Gap Services M1",
+      "motorway": "M1",
+      "location": "between junctions J16-17",
+      "operator": "RoadChef",
+      "postcode": "NN6 7UZ",
+      "current_url": null,
+      "suggested_url": "https://www.roadchef.com/motorway-services/watford-gap",
+      "notes": ""
+    },
+    {
+      "name": "Winchester Services M3",
+      "motorway": "M3",
+      "location": "between junctions J8-9 and from N/A",
+      "operator": "Moto",
+      "postcode": "SO21 1PP",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/motorway-services/motorway-services-by-motorway/m3-motorway-services/",
+      "notes": ""
+    },
+    {
+      "name": "Woolley Edge Services M1",
+      "motorway": "M1",
+      "location": "between junctions J38-39",
+      "operator": "Moto",
+      "postcode": "WF4 4LQ",
+      "current_url": null,
+      "suggested_url": "https://moto-way.com/services/woolley-edge-southbound/",
+      "notes": ""
+    }
+  ]
+}

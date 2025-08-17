@@ -1,0 +1,1667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UK Service Stations Explorer - With Brand Logos & Map</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header .subtitle {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 5px;
+        }
+
+        .header .update-info {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .stat-card {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            min-width: 140px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #667eea;
+            display: block;
+        }
+
+        .controls {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+        }
+
+        /* View Toggle Buttons */
+        .view-toggle {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .toggle-btn {
+            padding: 12px 24px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .toggle-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .toggle-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        /* Map Container */
+        .map-container {
+            background: white;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            height: 600px;
+            display: none;
+        }
+
+        .map-container.show {
+            display: block;
+        }
+
+        #map {
+            width: 100%;
+            height: 100%;
+        }
+
+        .map-stats {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            z-index: 1000;
+            min-width: 200px;
+        }
+
+        .closest-station-info {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.98);
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.15);
+            z-index: 1000;
+            min-width: 280px;
+            max-width: 320px;
+            border: 2px solid gold;
+        }
+
+        .closest-station-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            color: #333;
+        }
+
+        .close-closest {
+            background: none;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            color: #999;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .close-closest:hover {
+            color: #333;
+        }
+
+        .closest-station-details {
+            font-size: 0.9rem;
+            line-height: 1.4;
+        }
+
+        .closest-station-name {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .closest-station-distance {
+            background: gold;
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 0.85rem;
+        }
+
+        .closest-station-details p {
+            margin: 4px 0;
+            color: #666;
+        }
+
+        .closest-food-outlets {
+            margin-top: 8px;
+        }
+
+        .closest-food-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 4px;
+        }
+
+        .closest-food-item {
+            background: #667eea;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+        }
+
+        .stat-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .stat-value {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        /* Custom map marker styles */
+        .custom-marker {
+            background: #667eea;
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+        }
+
+        .map-popup {
+            max-width: 300px;
+        }
+
+        .popup-header {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .popup-info {
+            margin-bottom: 10px;
+            color: #666;
+        }
+
+        .popup-brands {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 4px;
+            margin-top: 8px;
+        }
+
+        .popup-brand {
+            background: #667eea;
+            color: white;
+            padding: 2px 6px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+        }
+
+        .popup-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #667eea;
+            color: white !important;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        .popup-link:hover {
+            background: #5a67d8;
+            color: white !important;
+        }
+
+        /* Location Marker Styles */
+        .user-location-marker {
+            background: #007bff;
+            color: white;
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+            font-size: 12px;
+        }
+
+        .closest-station-marker {
+            background: gold;
+            color: #333;
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 25px;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 3px 8px rgba(255,215,0,0.4);
+            font-size: 14px;
+        }
+
+        .control-group {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box, .filter-select {
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box:focus, .filter-select:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .filter-select {
+            min-width: 150px;
+        }
+
+        .clear-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+
+        .clear-btn:hover {
+            background: #ff5252;
+        }
+
+        /* Food Brand Filter Section with Real Logos */
+        .food-brand-filter {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #eee;
+        }
+
+        .filter-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .brand-filters {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .brand-filter {
+            display: flex;
+            align-items: center;
+            padding: 12px;
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s;
+            user-select: none;
+        }
+
+        .brand-filter:hover {
+            background: #e9ecef;
+            border-color: #667eea;
+        }
+
+        .brand-filter.active {
+            background: #667eea;
+            border-color: #667eea;
+            color: white;
+        }
+
+        .brand-filter .brand-logo {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            margin-right: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            background: white;
+            padding: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .brand-filter .brand-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .brand-filter .brand-name {
+            font-weight: 500;
+            flex: 1;
+        }
+
+        .brand-filter .station-count {
+            background: rgba(0,0,0,0.1);
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin-left: 8px;
+        }
+
+        .brand-filter.active .station-count {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .stations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .station-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .station-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .station-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .station-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .station-info {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
+        }
+
+        .info-tag {
+            background: #667eea;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .operator-tag { background: #51cf66; }
+        .motorway-tag { background: #ff8cc8; }
+
+        .facilities-section {
+            margin-top: 15px;
+        }
+
+        .facilities-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .food-outlets-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .food-outlet-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 8px 4px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .food-outlet-logo {
+            width: 32px;
+            height: 32px;
+            border-radius: 6px;
+            margin-bottom: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            padding: 2px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .food-outlet-logo img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .food-outlet-name {
+            font-size: 0.7rem;
+            line-height: 1.1;
+            color: #555;
+        }
+
+        .facilities-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+        }
+
+        .facility-tag {
+            background: #f8f9fa;
+            color: #495057;
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            border: 1px solid #e9ecef;
+        }
+
+        .retail-tag { background: #d1ecf1; color: #0c5460; }
+        .amenity-tag { background: #d4edda; color: #155724; }
+
+        .parking-info {
+            margin-top: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            color: #666;
+        }
+
+        .website-link {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 32px;
+            height: 32px;
+            background: #667eea;
+            color: white !important;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background-color 0.3s;
+        }
+
+        .website-link:hover {
+            background: #5a67d8;
+            color: white !important;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+
+        .modal-content {
+            background-color: white;
+            margin: 5% auto;
+            padding: 30px;
+            border-radius: 15px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            right: 20px;
+            top: 15px;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+            color: #aaa;
+        }
+
+        .close:hover {
+            color: #000;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            color: #666;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .active-filters {
+            margin-top: 15px;
+            padding: 15px;
+            background: #e3f2fd;
+            border-radius: 8px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .active-filters-title {
+            font-weight: bold;
+            margin-bottom: 8px;
+            color: #1976d2;
+        }
+
+        .active-filter-tag {
+            background: #2196f3;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin: 0 5px 5px 0;
+            display: inline-block;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .stats {
+                gap: 15px;
+            }
+            
+            .control-group {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            
+            .search-box {
+                min-width: unset;
+            }
+            
+            .stations-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .brand-filters {
+                grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1><i class="fas fa-gas-pump"></i> UK Service Stations Explorer</h1>
+            <p class="subtitle">Find the perfect service station
+                
+            </p>
+            <p class="update-info">Last updated: <span id="last-updated">Loading...</span></p>
+        </div>
+
+        <div id="loading" class="loading">
+            <i class="fas fa-spinner fa-spin"></i> Loading enhanced service stations data...
+        </div>
+
+        <div id="main-content" style="display: none;">
+            <div class="stats">
+                <div class="stat-card">
+                    <span id="total-stations" class="stat-number">0</span>
+                    <div>Total Stations</div>
+                </div>
+                <div class="stat-card">
+                    <span id="displayed-stations" class="stat-number">0</span>
+                    <div>Displayed</div>
+                </div>
+                <div class="stat-card">
+                    <span id="urls-found" class="stat-number">0</span>
+                    <div>URLs Found</div>
+                </div>
+                <div class="stat-card">
+                    <span id="operators-count" class="stat-number">0</span>
+                    <div>Operators</div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <!-- View Toggle -->
+                <div class="view-toggle">
+                    <button class="toggle-btn" id="grid-view-btn" onclick="showGridView()">
+                        <i class="fas fa-th-large"></i> Grid View
+                    </button>
+                    <button class="toggle-btn active" id="map-view-btn" onclick="showMapView()">
+                        <i class="fas fa-map-marked-alt"></i> Map View
+                    </button>
+                    <button class="toggle-btn" id="location-btn" onclick="findUserLocation()">
+                        <i class="fas fa-location-arrow"></i> Find Nearest
+                    </button>
+                </div>
+
+                <div class="control-group">
+                    <input type="text" id="search" class="search-box" placeholder="🔍 Search by name, motorway, or location...">
+                    <select id="operator-filter" class="filter-select">
+                        <option value="">All Operators</option>
+                    </select>
+                    <select id="motorway-filter" class="filter-select">
+                        <option value="">All Motorways</option>
+                    </select>
+                    <button id="clear-filters" class="clear-btn">Clear All Filters</button>
+                </div>
+
+                <!-- Food Brand Filter Section with Real Logos -->
+                <div class="food-brand-filter">
+                    <div class="filter-title">
+                        <i class="fas fa-utensils"></i>
+                        Filter by Food Outlets (with local logos)
+                    </div>
+                    <div class="brand-filters" id="brand-filters">
+                        <!-- Brand filters will be populated by JavaScript -->
+                    </div>
+                </div>
+
+                <div id="active-filters" class="active-filters" style="display: none;">
+                    <div class="active-filters-title">Active Filters:</div>
+                    <div id="active-filters-list"></div>
+                </div>
+            </div>
+
+            <!-- Map Container -->
+            <div class="map-container show" id="map-container">
+                <div id="map"></div>
+                <div class="map-stats" id="map-stats">
+                    <div class="stat-item">
+                        <span>Total Stations:</span>
+                        <span class="stat-value" id="map-total-stations">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Visible:</span>
+                        <span class="stat-value" id="map-visible-stations">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>With URLs:</span>
+                        <span class="stat-value" id="map-stations-with-urls">0</span>
+                    </div>
+                    <div class="stat-item">
+                        <span>Operators:</span>
+                        <span class="stat-value" id="map-operators-count">0</span>
+                    </div>
+                </div>
+                
+                <!-- Closest Station Info Panel -->
+                <div class="closest-station-info" id="closest-station-info" style="display: none;">
+                    <div class="closest-station-header">
+                        <i class="fas fa-star" style="color: gold;"></i> Closest Station
+                        <button class="close-closest" onclick="hideClosestStationInfo()">&times;</button>
+                    </div>
+                    <div class="closest-station-details" id="closest-station-details">
+                        <!-- Station details will be populated here -->
+                    </div>
+                </div>
+            </div>
+
+            <div id="stations-container" class="stations-grid" style="display: none;"></div>
+
+            <div id="no-results" class="no-results" style="display: none;">
+                <i class="fas fa-search" style="font-size: 3rem; margin-bottom: 20px; color: #ccc;"></i>
+                <h3>No service stations found</h3>
+                <p>Try adjusting your search criteria or filters.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for station details -->
+    <div id="station-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let serviceStations = [];
+        let filteredStations = [];
+        let activeBrandFilters = new Set();
+        let map;
+        let stationMarkers = [];
+        let currentView = 'map';
+        let userLocationMarker = null;
+        let userLocation = null;
+        let closestStationMarker = null;
+
+        // Operator colors for markers
+        const operatorColors = {
+            'Moto': '#ff6b35',
+            'Welcome Break': '#00a8ff',
+            'RoadChef': '#2ed573',
+            'Extra MSA': '#ff3838',
+            'Westmorland': '#8c7ae6',
+            'default': '#667eea'
+        };
+
+        // Food brand configurations with local PNG logos
+        const foodBrands = {
+            "McDonald's": { 
+                logo: 'images/mcdonalds.png',
+                alt: 'McDonalds logo'
+            },
+            'Burger King': { 
+                logo: 'images/burger-king.png',
+                alt: 'Burger King logo'
+            },
+            'KFC': { 
+                logo: 'images/kfc.png',
+                alt: 'KFC logo'
+            },
+            'Subway': { 
+                logo: 'images/subway.png',
+                alt: 'Subway logo'
+            },
+            'Costa Coffee': { 
+                logo: 'images/costa-coffee.png',
+                alt: 'Costa Coffee logo'
+            },
+            'Starbucks': { 
+                logo: 'images/starbucks.png',
+                alt: 'Starbucks logo'
+            },
+            'Greggs': { 
+                logo: 'images/greggs.png',
+                alt: 'Greggs logo'
+            },
+            'Krispy Kreme': { 
+                logo: 'images/krispy-kreme.png',
+                alt: 'Krispy Kreme logo'
+            },
+            'Leon': { 
+                logo: 'images/leon.png',
+                alt: 'Leon logo'
+            },
+            'Pret A Manger': { 
+                logo: 'images/pret-a-manger.png',
+                alt: 'Pret A Manger logo'
+            },
+            'Chopstix': { 
+                logo: 'images/chopstix.png',
+                alt: 'Chopstix logo placeholder'
+            },
+            'Taco Bell': { 
+                logo: 'images/taco-bell.png',
+                alt: 'Taco Bell logo'
+            },
+            'Pizza Express': { 
+                logo: 'images/pizza-express.png',
+                alt: 'Pizza Express logo'
+            },
+            'The Good Breakfast': { 
+                logo: 'images/thegoodbreakfast.webp',
+                alt: 'The Good Breakfast placeholder'
+            },
+            'Upper Crust': { 
+                logo: 'images/upper-crust.png',
+                alt: 'Upper Crust placeholder'
+            },
+            "Nando's": { 
+                logo: 'images/nandos.png',
+                alt: 'Nandos logo'
+            },
+            'Marks & Spencer': {
+                logo: 'images/marks-and-spencer.png',
+                alt: 'Marks & Spencer logo'
+            },
+            'WHSmith': {
+                logo: 'images/whsmith.png',
+                alt: 'WHSmith logo'
+            },
+            'Waitrose & Partners': {
+                logo: 'images/waitrose.png',
+                alt: 'Waitrose logo'
+            },
+            'Boots': {
+                logo: 'images/boots.png',
+                alt: 'Boots logo'
+            },
+            'Tesco Express': {
+                logo: 'images/tesco.png',
+                alt: 'Tesco logo'
+            },
+            'EAT': {
+                logo: 'images/eat.png',
+                alt: 'EAT logo'
+            }
+        };
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            loadServiceStations();
+            setupEventListeners();
+        });
+
+        async function loadServiceStations() {
+            try {
+                const response = await fetch('../data/uk_service_stations.json');
+                const data = await response.json();
+                serviceStations = data.service_stations;
+                filteredStations = [...serviceStations];
+                
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('main-content').style.display = 'block';
+                
+                updateStats(data);
+                populateFilters();
+                setupBrandFilters();
+                initializeMap();
+                updateDisplay();
+
+                // Update last updated info
+                if (data.metadata && data.metadata.last_updated) {
+                    const date = new Date(data.metadata.last_updated);
+                    document.getElementById('last-updated').textContent = date.toLocaleDateString() + ' ' + date.toLocaleTimeString();
+                }
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('loading').innerHTML = '<i class="fas fa-exclamation-triangle"></i> Error loading data. Please check if data/uk_service_stations.json exists.';
+            }
+        }
+
+        function updateStats(data) {
+            document.getElementById('total-stations').textContent = data.metadata?.total_stations || serviceStations.length;
+            document.getElementById('displayed-stations').textContent = filteredStations.length;
+            document.getElementById('urls-found').textContent = data.metadata?.successful_urls || '0';
+            
+            const operators = [...new Set(serviceStations.map(s => s.operator))];
+            document.getElementById('operators-count').textContent = operators.length;
+        }
+
+        function populateFilters() {
+            // Populate operator filter
+            const operatorFilter = document.getElementById('operator-filter');
+            const operators = [...new Set(serviceStations.map(s => s.operator))].sort();
+            operators.forEach(operator => {
+                const option = document.createElement('option');
+                option.value = operator;
+                option.textContent = operator;
+                operatorFilter.appendChild(option);
+            });
+
+            // Populate motorway filter
+            const motorwayFilter = document.getElementById('motorway-filter');
+            const motorways = [...new Set(serviceStations.map(s => s.motorway))].sort();
+            motorways.forEach(motorway => {
+                const option = document.createElement('option');
+                option.value = motorway;
+                option.textContent = motorway;
+                motorwayFilter.appendChild(option);
+            });
+        }
+
+        function setupBrandFilters() {
+            const brandFiltersContainer = document.getElementById('brand-filters');
+            
+            // Count stations for each brand
+            const brandCounts = {};
+            serviceStations.forEach(station => {
+                if (station.facilities && station.facilities.food_outlets) {
+                    station.facilities.food_outlets.forEach(outlet => {
+                        if (foodBrands[outlet]) {
+                            brandCounts[outlet] = (brandCounts[outlet] || 0) + 1;
+                        }
+                    });
+                }
+            });
+
+            // Create filter elements for brands that exist in the data
+            Object.keys(brandCounts)
+                .sort((a, b) => brandCounts[b] - brandCounts[a]) // Sort by count descending
+                .forEach(brand => {
+                    const config = foodBrands[brand];
+                    const count = brandCounts[brand];
+                    
+                    const filterElement = document.createElement('div');
+                    filterElement.className = 'brand-filter';
+                    filterElement.dataset.brand = brand;
+                    
+                    filterElement.innerHTML = `
+                        <div class="brand-logo">
+                            <img src="${config.logo}" alt="${config.alt}" onerror="this.src='https://via.placeholder.com/40x40/6c757d/white?text=${getInitials(brand)}'">
+                        </div>
+                        <div class="brand-name">${brand}</div>
+                        <div class="station-count">${count}</div>
+                    `;
+                    
+                    filterElement.addEventListener('click', () => toggleBrandFilter(brand, filterElement));
+                    brandFiltersContainer.appendChild(filterElement);
+                });
+        }
+
+        function getInitials(brandName) {
+            return brandName.split(' ').map(word => word[0]).join('').substring(0, 2);
+        }
+
+        function toggleBrandFilter(brand, element) {
+            if (activeBrandFilters.has(brand)) {
+                activeBrandFilters.delete(brand);
+                element.classList.remove('active');
+            } else {
+                activeBrandFilters.add(brand);
+                element.classList.add('active');
+            }
+            
+            updateActiveFiltersDisplay();
+            filterStations();
+        }
+
+        // Map Functions
+        function initializeMap() {
+            // Initialize map centered on UK
+            map = L.map('map').setView([54.5, -3.0], 6);
+            
+            // Add tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add markers for all stations
+            addMarkersToMap();
+        }
+
+        function addMarkersToMap() {
+            // Clear existing markers
+            stationMarkers.forEach(marker => map.removeLayer(marker));
+            stationMarkers = [];
+
+            filteredStations.forEach(station => {
+                const lat = station.coordinates.latitude;
+                const lng = station.coordinates.longitude;
+                
+                if (lat && lng) {
+                    // Create custom marker
+                    const color = operatorColors[station.operator] || operatorColors.default;
+                    
+                    const marker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        fillColor: color,
+                        color: 'white',
+                        weight: 2,
+                        opacity: 1,
+                        fillOpacity: 0.8
+                    });
+
+                    // Create popup content
+                    const popupContent = createPopupContent(station);
+                    marker.bindPopup(popupContent, { maxWidth: 300 });
+
+                    marker.addTo(map);
+                    stationMarkers.push(marker);
+                }
+            });
+
+            // Fit map to show all visible markers if there are any
+            if (stationMarkers.length > 0) {
+                const group = new L.featureGroup(stationMarkers);
+                map.fitBounds(group.getBounds().pad(0.1));
+            }
+        }
+
+        function createPopupContent(station) {
+            const foodOutlets = station.facilities.food_outlets || [];
+            const websiteLink = station.website_url ? 
+                `<a href="${station.website_url}" target="_blank" class="popup-link"><i class="fas fa-external-link-alt"></i> Visit Website</a>` : '';
+
+            return `
+                <div class="map-popup">
+                    <div class="popup-header">${station.name}</div>
+                    <div class="popup-info">
+                        <strong>${station.operator}</strong> • ${station.motorway}<br>
+                        📍 ${station.location}
+                    </div>
+                    ${foodOutlets.length > 0 ? `
+                        <div style="margin-top: 8px;">
+                            <strong>Food Outlets:</strong>
+                            <div class="popup-brands">
+                                ${foodOutlets.slice(0, 6).map(outlet => 
+                                    `<span class="popup-brand">${outlet}</span>`
+                                ).join('')}
+                                ${foodOutlets.length > 6 ? `<span class="popup-brand">+${foodOutlets.length - 6} more</span>` : ''}
+                            </div>
+                        </div>
+                    ` : ''}
+                    ${websiteLink}
+                </div>
+            `;
+        }
+
+        // View Toggle Functions
+        function showMapView() {
+            currentView = 'map';
+            document.getElementById('grid-view-btn').classList.remove('active');
+            document.getElementById('map-view-btn').classList.add('active');
+            document.getElementById('map-container').classList.add('show');
+            document.getElementById('stations-container').style.display = 'none';
+            
+            // Ensure map is visible and re-render
+            setTimeout(() => {
+                map.invalidateSize();
+                addMarkersToMap();
+            }, 100);
+        }
+
+        function showGridView() {
+            currentView = 'grid';
+            document.getElementById('map-view-btn').classList.remove('active');
+            document.getElementById('grid-view-btn').classList.add('active');
+            document.getElementById('map-container').classList.remove('show');
+            document.getElementById('stations-container').style.display = 'grid';
+            displayStations();
+        }
+
+        function updateDisplay() {
+            updateMapStats();
+            
+            if (currentView === 'map') {
+                addMarkersToMap();
+            } else {
+                displayStations();
+            }
+        }
+
+        function updateMapStats() {
+            const totalStations = serviceStations.length;
+            const visibleStations = filteredStations.length;
+            const stationsWithUrls = filteredStations.filter(s => s.website_url).length;
+            const operators = [...new Set(filteredStations.map(s => s.operator))].length;
+
+            document.getElementById('map-total-stations').textContent = totalStations;
+            document.getElementById('map-visible-stations').textContent = visibleStations;
+            document.getElementById('map-stations-with-urls').textContent = stationsWithUrls;
+            document.getElementById('map-operators-count').textContent = operators;
+        }
+
+        // Geolocation Functions
+        function calculateDistance(lat1, lon1, lat2, lon2) {
+            // Calculate distance between two points using Haversine formula
+            const R = 6371; // Radius of the Earth in kilometers
+            const dLat = (lat2 - lat1) * Math.PI / 180;
+            const dLon = (lon2 - lon1) * Math.PI / 180;
+            const a = Math.sin(dLat/2) * Math.sin(dLat/2) +
+                      Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+                      Math.sin(dLon/2) * Math.sin(dLon/2);
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a));
+            return R * c; // Distance in kilometers
+        }
+
+        function findClosestStation(userLat, userLon) {
+            // Find the closest service station to user location
+            let closestStation = null;
+            let shortestDistance = Infinity;
+
+            serviceStations.forEach(station => {
+                const stationLat = station.coordinates.latitude;
+                const stationLon = station.coordinates.longitude;
+                
+                if (stationLat && stationLon) {
+                    const distance = calculateDistance(userLat, userLon, stationLat, stationLon);
+                    if (distance < shortestDistance) {
+                        shortestDistance = distance;
+                        closestStation = station;
+                        closestStation.distance = distance;
+                    }
+                }
+            });
+
+            return closestStation;
+        }
+
+        function addUserLocationMarker(lat, lon) {
+            // Add user location marker to the map
+            // Remove existing user location marker
+            if (userLocationMarker) {
+                map.removeLayer(userLocationMarker);
+            }
+
+            // Create user location marker
+            userLocationMarker = L.marker([lat, lon], {
+                icon: L.divIcon({
+                    className: 'user-location-marker',
+                    html: '<i class="fas fa-user-circle"></i>',
+                    iconSize: [20, 20],
+                    iconAnchor: [10, 10]
+                })
+            }).addTo(map);
+
+            userLocationMarker.bindPopup(`
+                <div style="text-align: center;">
+                    <strong><i class="fas fa-map-marker-alt"></i> Your Location</strong><br>
+                    <small>Lat: ${lat.toFixed(4)}, Lon: ${lon.toFixed(4)}</small>
+                </div>
+            `);
+        }
+
+        function highlightClosestStation(station) {
+            // Highlight the closest station on the map
+            // Remove existing closest station highlight
+            if (closestStationMarker) {
+                map.removeLayer(closestStationMarker);
+            }
+
+            const lat = station.coordinates.latitude;
+            const lon = station.coordinates.longitude;
+
+            // Create pulsing marker for closest station
+            closestStationMarker = L.marker([lat, lon], {
+                icon: L.divIcon({
+                    className: 'closest-station-marker',
+                    html: '<i class="fas fa-star"></i>',
+                    iconSize: [25, 25],
+                    iconAnchor: [12, 12]
+                }),
+                zIndexOffset: 1000
+            }).addTo(map);
+
+            // Show station info in the panel instead of popup
+            showClosestStationInfo(station);
+
+            // Center map on closest station with user location visible
+            const bounds = L.latLngBounds([
+                [userLocation.latitude, userLocation.longitude],
+                [lat, lon]
+            ]);
+            map.fitBounds(bounds, { padding: [20, 20] });
+        }
+
+        function findUserLocation() {
+            // Get user's GPS location and show closest station
+            const locationBtn = document.getElementById('location-btn');
+            
+            if (!navigator.geolocation) {
+                alert('Geolocation is not supported by this browser.');
+                return;
+            }
+
+            // Update button to show loading
+            locationBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Locating...';
+            locationBtn.disabled = true;
+
+            navigator.geolocation.getCurrentPosition(
+                function(position) {
+                    const lat = position.coords.latitude;
+                    const lon = position.coords.longitude;
+                    
+                    userLocation = { latitude: lat, longitude: lon };
+
+                    // Switch to map view if not already there
+                    if (currentView !== 'map') {
+                        showMapView();
+                    }
+
+                    // Add user location marker
+                    addUserLocationMarker(lat, lon);
+
+                    // Find and highlight closest station
+                    const closestStation = findClosestStation(lat, lon);
+                    
+                    if (closestStation) {
+                        highlightClosestStation(closestStation);
+                        
+                        // Station info will be shown in the panel
+                        console.log(`Closest station found: ${closestStation.name} (${closestStation.distance.toFixed(1)} km away)`);
+                    } else {
+                        alert('No service stations found in the area.');
+                    }
+
+                    // Reset button
+                    locationBtn.innerHTML = '<i class="fas fa-location-arrow"></i> Find Nearest';
+                    locationBtn.disabled = false;
+                },
+                function(error) {
+                    let errorMessage = 'Unable to retrieve your location. ';
+                    
+                    switch(error.code) {
+                        case error.PERMISSION_DENIED:
+                            errorMessage += 'Please allow location access and try again.';
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            errorMessage += 'Location information is unavailable.';
+                            break;
+                        case error.TIMEOUT:
+                            errorMessage += 'Location request timed out.';
+                            break;
+                        default:
+                            errorMessage += 'An unknown error occurred.';
+                            break;
+                    }
+                    
+                    alert(errorMessage);
+                    
+                    // Reset button
+                    locationBtn.innerHTML = '<i class="fas fa-location-arrow"></i> Find Nearest';
+                    locationBtn.disabled = false;
+                },
+                {
+                    enableHighAccuracy: true,
+                    timeout: 10000,
+                    maximumAge: 300000 // 5 minutes
+                }
+            );
+        }
+
+        function updateActiveFiltersDisplay() {
+            const activeFiltersContainer = document.getElementById('active-filters');
+            const activeFiltersList = document.getElementById('active-filters-list');
+            
+            if (activeBrandFilters.size > 0) {
+                activeFiltersContainer.style.display = 'block';
+                activeFiltersList.innerHTML = Array.from(activeBrandFilters)
+                    .map(brand => `<span class="active-filter-tag">${brand}</span>`)
+                    .join('');
+            } else {
+                activeFiltersContainer.style.display = 'none';
+            }
+        }
+
+        function setupEventListeners() {
+            document.getElementById('search').addEventListener('input', filterStations);
+            document.getElementById('operator-filter').addEventListener('change', filterStations);
+            document.getElementById('motorway-filter').addEventListener('change', filterStations);
+            document.getElementById('clear-filters').addEventListener('click', clearAllFilters);
+
+            // Modal events
+            document.querySelector('.close').addEventListener('click', closeModal);
+            window.addEventListener('click', function(event) {
+                const modal = document.getElementById('station-modal');
+                if (event.target === modal) {
+                    closeModal();
+                }
+            });
+        }
+
+        function filterStations() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const operatorFilter = document.getElementById('operator-filter').value;
+            const motorwayFilter = document.getElementById('motorway-filter').value;
+
+            filteredStations = serviceStations.filter(station => {
+                const matchesSearch = station.name.toLowerCase().includes(searchTerm) ||
+                                    station.motorway.toLowerCase().includes(searchTerm) ||
+                                    station.location.toLowerCase().includes(searchTerm);
+
+                const matchesOperator = !operatorFilter || station.operator === operatorFilter;
+                const matchesMotorway = !motorwayFilter || station.motorway === motorwayFilter;
+                
+                const matchesBrands = activeBrandFilters.size === 0 || 
+                    (station.facilities.food_outlets && 
+                     Array.from(activeBrandFilters).some(brand => 
+                         station.facilities.food_outlets.includes(brand)));
+
+                return matchesSearch && matchesOperator && matchesMotorway && matchesBrands;
+            });
+
+            document.getElementById('displayed-stations').textContent = filteredStations.length;
+            updateDisplay();
+        }
+
+        function clearAllFilters() {
+            document.getElementById('search').value = '';
+            document.getElementById('operator-filter').value = '';
+            document.getElementById('motorway-filter').value = '';
+            
+            // Clear brand filters
+            activeBrandFilters.clear();
+            document.querySelectorAll('.brand-filter').forEach(el => el.classList.remove('active'));
+            updateActiveFiltersDisplay();
+            
+            filteredStations = [...serviceStations];
+            document.getElementById('displayed-stations').textContent = filteredStations.length;
+            updateDisplay();
+        }
+
+        function displayStations() {
+            const container = document.getElementById('stations-container');
+            const noResults = document.getElementById('no-results');
+
+            if (filteredStations.length === 0) {
+                container.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            container.style.display = 'grid';
+            noResults.style.display = 'none';
+
+            container.innerHTML = filteredStations.map(station => `
+                <div class="station-card" onclick="showStationDetails('${station.name.replace(/'/g, "\\'")}')">
+                    ${station.website_url ? `<a href="${station.website_url}" target="_blank" class="website-link" onclick="event.stopPropagation()"><i class="fas fa-external-link-alt"></i></a>` : ''}
+                    
+                    <div class="station-header">
+                        <div>
+                            <div class="station-name">${station.name}</div>
+                            <div class="station-info">
+                                <span class="info-tag motorway-tag">${station.motorway}</span>
+                                <span class="info-tag operator-tag">${station.operator}</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 10px;">
+                        <i class="fas fa-map-marker-alt"></i> ${station.location}
+                    </div>
+
+                    ${station.facilities.food_outlets && station.facilities.food_outlets.length > 0 ? `
+                        <div class="facilities-section">
+                            <div class="facilities-title">
+                                <i class="fas fa-utensils"></i> Food Outlets
+                            </div>
+                            <div class="food-outlets-grid">
+                                ${station.facilities.food_outlets.slice(0, 6).map(outlet => {
+                                    const config = foodBrands[outlet];
+                                    return config ? `
+                                        <div class="food-outlet-item">
+                                            <div class="food-outlet-logo">
+                                                <img src="${config.logo}" alt="${config.alt}" onerror="this.src='https://via.placeholder.com/32x32/6c757d/white?text=${getInitials(outlet)}'">
+                                            </div>
+                                            <div class="food-outlet-name">${outlet.length > 12 ? outlet.substring(0, 10) + '...' : outlet}</div>
+                                        </div>
+                                    ` : `
+                                        <div class="food-outlet-item">
+                                            <div class="food-outlet-logo">
+                                                <img src="https://via.placeholder.com/32x32/6c757d/white?text=${getInitials(outlet)}" alt="${outlet} placeholder">
+                                            </div>
+                                            <div class="food-outlet-name">${outlet.length > 12 ? outlet.substring(0, 10) + '...' : outlet}</div>
+                                        </div>
+                                    `;
+                                }).join('')}
+                                ${station.facilities.food_outlets.length > 6 ? 
+                                    `<div class="food-outlet-item" style="background: #e9ecef; color: #6c757d; justify-content: center;">+${station.facilities.food_outlets.length - 6}</div>` : ''}
+                            </div>
+                        </div>
+                    ` : ''}
+
+                    ${station.facilities.amenities && station.facilities.amenities.length > 0 ? `
+                        <div class="facilities-section">
+                            <div class="facilities-title">
+                                <i class="fas fa-star"></i> Amenities
+                            </div>
+                            <div class="facilities-list">
+                                ${station.facilities.amenities.slice(0, 4).map(amenity => 
+                                    `<span class="facility-tag amenity-tag">${amenity}</span>`
+                                ).join('')}
+                                ${station.facilities.amenities.length > 4 ? 
+                                    `<span class="facility-tag">+${station.facilities.amenities.length - 4} more</span>` : ''}
+                            </div>
+                        </div>
+                    ` : ''}
+
+                    ${station.parking_charges ? `
+                        <div class="parking-info">
+                            <i class="fas fa-parking"></i> ${station.parking_charges.substring(0, 100)}${station.parking_charges.length > 100 ? '...' : ''}
+                        </div>
+                    ` : ''}
+                </div>
+            `).join('');
+        }
+
+        function showStationDetails(stationName) {
+            const station = serviceStations.find(s => s.name === stationName);
+            if (!station) return;
+
+            const modalBody = document.getElementById('modal-body');
+            modalBody.innerHTML = `
+                <h2>${station.name}</h2>
+                <div style="margin: 20px 0;">
+                    <p><strong><i class="fas fa-road"></i> Motorway:</strong> ${station.motorway}</p>
+                    <p><strong><i class="fas fa-map-marker-alt"></i> Location:</strong> ${station.location}</p>
+                    <p><strong><i class="fas fa-building"></i> Operator:</strong> ${station.operator}</p>
+                    <p><strong><i class="fas fa-mail-bulk"></i> Postcode:</strong> ${station.postcode}</p>
+                    <p><strong><i class="fas fa-cog"></i> Type:</strong> ${station.type}</p>
+                </div>
+
+                ${station.facilities.food_outlets && station.facilities.food_outlets.length > 0 ? `
+                    <div style="margin: 20px 0;">
+                        <h3><i class="fas fa-utensils"></i> Food Outlets</h3>
+                        <div class="food-outlets-grid" style="margin-top: 10px;">
+                            ${station.facilities.food_outlets.map(outlet => {
+                                const config = foodBrands[outlet];
+                                return config ? `
+                                    <div class="food-outlet-item">
+                                        <div class="food-outlet-logo">
+                                            <img src="${config.logo}" alt="${config.alt}" onerror="this.src='https://via.placeholder.com/32x32/6c757d/white?text=${getInitials(outlet)}'">
+                                        </div>
+                                        <div class="food-outlet-name">${outlet}</div>
+                                    </div>
+                                ` : `
+                                    <div class="food-outlet-item">
+                                        <div class="food-outlet-logo">
+                                            <img src="https://via.placeholder.com/32x32/6c757d/white?text=${getInitials(outlet)}" alt="${outlet} placeholder">
+                                        </div>
+                                        <div class="food-outlet-name">${outlet}</div>
+                                    </div>
+                                `;
+                            }).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${station.facilities.retail_shops && station.facilities.retail_shops.length > 0 ? `
+                    <div style="margin: 20px 0;">
+                        <h3><i class="fas fa-shopping-bag"></i> Retail Shops</h3>
+                        <div class="facilities-list">
+                            ${station.facilities.retail_shops.map(shop => 
+                                `<span class="facility-tag retail-tag">${shop}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${station.facilities.amenities && station.facilities.amenities.length > 0 ? `
+                    <div style="margin: 20px 0;">
+                        <h3><i class="fas fa-star"></i> Amenities</h3>
+                        <div class="facilities-list">
+                            ${station.facilities.amenities.map(amenity => 
+                                `<span class="facility-tag amenity-tag">${amenity}</span>`
+                            ).join('')}
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${station.parking_charges ? `
+                    <div style="margin: 20px 0;">
+                        <h3><i class="fas fa-parking"></i> Parking Information</h3>
+                        <div style="background: #f8f9fa; padding: 15px; border-radius: 8px; white-space: pre-line;">
+                            ${station.parking_charges}
+                        </div>
+                    </div>
+                ` : ''}
+
+                ${station.website_url ? `
+                    <a href="${station.website_url}" target="_blank" style="display: inline-block; margin-top: 15px; padding: 10px 20px; background: #667eea; color: white !important; text-decoration: none; border-radius: 8px;">
+                        <i class="fas fa-external-link-alt"></i> Visit Website
+                    </a>
+                ` : ''}
+            `;
+
+            document.getElementById('station-modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('station-modal').style.display = 'none';
+        }
+
+        function showClosestStationInfo(station) {
+            const infoPanel = document.getElementById('closest-station-info');
+            const detailsDiv = document.getElementById('closest-station-details');
+            
+            const distance = station.distance;
+            const foodOutlets = station.facilities.food_outlets || [];
+            const websiteLink = station.website_url ? 
+                `<a href="${station.website_url}" target="_blank" style="color: #667eea; text-decoration: none;"><i class="fas fa-external-link-alt"></i> Visit Website</a>` : '';
+            
+            detailsDiv.innerHTML = `
+                <div class="closest-station-name">${station.name}</div>
+                <div class="closest-station-distance">${distance.toFixed(1)} km away</div>
+                <p><strong>${station.operator}</strong> • ${station.motorway}</p>
+                <p>📍 ${station.location}</p>
+                ${foodOutlets.length > 0 ? `
+                    <div class="closest-food-outlets">
+                        <strong>Food Outlets:</strong>
+                        <div class="closest-food-list">
+                            ${foodOutlets.slice(0, 6).map(outlet => 
+                                `<span class="closest-food-item">${outlet}</span>`
+                            ).join('')}
+                            ${foodOutlets.length > 6 ? `<span class="closest-food-item">+${foodOutlets.length - 6} more</span>` : ''}
+                        </div>
+                    </div>
+                ` : ''}
+                ${websiteLink ? `<p style="margin-top: 8px;">${websiteLink}</p>` : ''}
+            `;
+            
+            infoPanel.style.display = 'block';
+        }
+
+        function hideClosestStationInfo() {
+            document.getElementById('closest-station-info').style.display = 'none';
+            
+            // Also remove the closest station marker
+            if (closestStationMarker) {
+                map.removeLayer(closestStationMarker);
+                closestStationMarker = null;
+            }
+        }
+    </script>
+</body>
+</html>
