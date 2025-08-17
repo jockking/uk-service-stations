@@ -364,31 +364,21 @@ class UpdatedProductionScraper:
             'services': []
         }
         
-        # Enhanced operator-specific defaults including target brands
+        # Conservative operator-specific defaults - only verified standard amenities
         operator_defaults = {
             'Moto': {
-                'food_outlets': ['Burger King', 'Costa Coffee', 'Greggs', 'KFC', 'Krispy Kreme'],
-                'retail_shops': ['WHSmith', 'Marks & Spencer'],
                 'amenities': ['EV Charging', 'Travelodge']
             },
             'Welcome Break': {
-                'food_outlets': ['Burger King', 'Starbucks', 'KFC', 'Subway', 'Krispy Kreme'],
-                'retail_shops': ['WHSmith', 'Waitrose & Partners'],
                 'amenities': ['EV Charging']
             },
             'RoadChef': {
-                'food_outlets': ["McDonald's", 'Costa Coffee', 'Leon', 'Greggs'],
-                'retail_shops': ['WHSmith', 'Marks & Spencer'],
                 'amenities': ['EV Charging']
             },
             'Extra MSA': {
-                'food_outlets': ['Leon', 'Pret A Manger'],
-                'retail_shops': ['WHSmith'],
                 'amenities': ['EV Charging', 'Meeting Rooms']
             },
             'Westmorland': {
-                'food_outlets': ['Farm Shop Restaurant'],
-                'retail_shops': ['Farm Shop'],
                 'amenities': ['Visitor Centre'],
                 'services': ['Local Sourcing', 'Farm-to-Table']
             }
