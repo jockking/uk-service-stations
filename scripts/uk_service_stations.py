@@ -282,15 +282,18 @@ class MasterStationsScraper:
             if facility in name_lower:
                 return False
         
-        # If it contains brand-like keywords, it's probably a brand
-        brand_keywords = [
-            'coffee', 'cafe', 'restaurant', 'food', 'kitchen', 'grill', 'pizza', 
-            'burger', 'sandwich', 'noodle', 'chicken', 'bakery', 'shop', 'store',
-            'smith', 'express', 'fresh', 'costa', 'mcdonald', 'krispy', 'chozen', 'coco'
+        # Known brand names - be very specific to avoid false positives
+        known_brands = [
+            'costa coffee', 'costa', 'mcdonald', 'burger king', 'kfc', 'subway',
+            'greggs', 'starbucks', 'krispy kreme', 'pret', 'leon', 'pizza express',
+            'nando', 'chopstix', 'taco bell', 'upper crust', 'chozen noodle',
+            'coco di mama', 'fresh food cafe', 'whsmith', 'wh smith', 'boots',
+            'marks & spencer', 'marks and spencer', 'waitrose', 'tesco'
         ]
         
-        for keyword in brand_keywords:
-            if keyword in name_lower:
+        # Only return True for known brands to avoid false positives
+        for brand in known_brands:
+            if brand in name_lower:
                 return True
         
         return False
@@ -355,8 +358,7 @@ class MasterStationsScraper:
                 'waitrose & partners': 'Waitrose & Partners',
                 'boots': 'Boots',
                 'tesco': 'Tesco Express',
-                'tesco express': 'Tesco Express',
-                'spar': 'Spar'
+                'tesco express': 'Tesco Express'
             }
             
             facilities = {
@@ -380,10 +382,14 @@ class MasterStationsScraper:
             # Combine all text sources
             all_text = page_text + " " + script_text
             
-            # Enhanced brand detection from all sources
+            # Enhanced brand detection from all sources with precise matching
             found_brands = set()
+            import re
             for search_term, brand_name in brand_mapping.items():
-                if search_term in all_text:
+                # Use word boundaries for more precise matching to avoid false positives
+                # like "spar" matching in "spare", "sparse", "transparent", etc.
+                pattern = r'\b' + re.escape(search_term) + r'\b'
+                if re.search(pattern, all_text, re.IGNORECASE):
                     found_brands.add(brand_name)
             
             # SPECIAL: Parse JSON brands data (for RoadChef and similar sites)
@@ -398,20 +404,22 @@ class MasterStationsScraper:
                 print(f"    📋 Found template JSON brands: {len(template_brands)} brands")
                 found_brands.update(template_brands)
             
-            # Check in meta tags, alt texts, and specific elements
+            # Check in meta tags, alt texts, and specific elements with precise matching
             for element in soup.find_all(['img', 'a', 'div', 'span', 'li', 'p'], alt=True):
                 alt_text = element.get('alt', '').lower()
                 for search_term, brand_name in brand_mapping.items():
-                    if search_term in alt_text:
+                    pattern = r'\b' + re.escape(search_term) + r'\b'
+                    if re.search(pattern, alt_text, re.IGNORECASE):
                         found_brands.add(brand_name)
             
-            # Check element text content and class names
+            # Check element text content and class names with precise matching
             for element in soup.find_all(['div', 'span', 'li', 'p', 'h1', 'h2', 'h3', 'h4']):
                 element_text = element.get_text().lower()
                 class_names = ' '.join(element.get('class', [])).lower()
                 
                 for search_term, brand_name in brand_mapping.items():
-                    if search_term in element_text or search_term in class_names:
+                    pattern = r'\b' + re.escape(search_term) + r'\b'
+                    if re.search(pattern, element_text, re.IGNORECASE) or re.search(pattern, class_names, re.IGNORECASE):
                         found_brands.add(brand_name)
             
             # Categorize brands
@@ -423,7 +431,7 @@ class MasterStationsScraper:
             ]
             
             retail_shops = [
-                'WHSmith', 'Marks & Spencer', 'Waitrose & Partners', 'Boots', 'Tesco Express', 'Spar'
+                'WHSmith', 'Marks & Spencer', 'Waitrose & Partners', 'Boots', 'Tesco Express'
             ]
             
             for brand in found_brands:

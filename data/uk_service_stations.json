@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "last_updated": "2025-08-30T11:54:15.771405",
+    "last_updated": "2025-08-30T12:19:44.777286",
     "total_stations": 102,
     "successful_urls": 102,
     "successful_scrapes": 101,
@@ -9,13 +9,13 @@
     "data_source": "Master Stations File + Real Website Scraping",
     "scraper_version": "Master Stations Scraper v1.0",
     "operators_supported": [
+      "Westmorland",
+      "RoadChef",
+      "Euro Garages",
+      "Welcome Break",
       "Stop 24",
       "Moto",
-      "RoadChef",
       "Extra MSA",
-      "Welcome Break",
-      "Euro Garages",
-      "Westmorland",
       "BP Connect"
     ],
     "scraping_features": [
@@ -139,7 +139,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -190,7 +189,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -239,7 +237,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -332,9 +329,7 @@
           "Greggs",
           "McDonald's"
         ],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
@@ -381,7 +376,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -459,7 +453,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -505,7 +498,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -600,7 +592,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -698,7 +689,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -796,7 +786,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -877,7 +866,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -961,7 +949,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1054,7 +1041,6 @@
           "McDonald's"
         ],
         "retail_shops": [
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1237,7 +1223,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1318,7 +1303,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1365,7 +1349,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1462,7 +1445,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1500,9 +1482,7 @@
       "website_url": "https://gloucesterservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Hotel",
           "Parking",
@@ -1533,9 +1513,7 @@
       "website_url": "https://gloucesterservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Hotel",
           "Parking",
@@ -1625,7 +1603,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1746,9 +1723,7 @@
       "website_url": "https://cairnlodgeservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Hotel",
           "Parking",
@@ -1866,7 +1841,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2071,7 +2045,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2119,7 +2092,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2166,7 +2138,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2313,7 +2284,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2410,7 +2380,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2524,7 +2493,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2841,7 +2809,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2885,7 +2852,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2967,7 +2933,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3168,7 +3133,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3298,7 +3262,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3395,7 +3358,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3443,7 +3405,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3523,7 +3484,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3637,7 +3597,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3684,7 +3643,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3757,9 +3715,7 @@
       "website_url": "https://www.tebayservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Hotel",
           "Parking",
@@ -3790,9 +3746,7 @@
       "website_url": "https://www.tebayservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [
-          "Spar"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Hotel",
           "Parking",
@@ -3882,7 +3836,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3963,7 +3916,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4010,7 +3962,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4057,7 +4008,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4102,7 +4052,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4249,7 +4198,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4334,7 +4282,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4381,7 +4328,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4474,7 +4420,6 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
-          "Spar",
           "WHSmith"
         ],
         "amenities": [
