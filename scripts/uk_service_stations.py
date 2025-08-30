@@ -23,6 +23,15 @@ class MasterStationsScraper:
         
         # Load master stations file
         self.master_stations = self.load_master_stations()
+        
+        # Manual overrides for JavaScript-heavy sites where brands can't be scraped
+        self.manual_overrides = {
+            'Watford Gap Services M1': {
+                'food_outlets': ['Costa Coffee', 'Costa Drive Thru', "McDonald's", 'Fresh Food Cafe', 'Chozen Noodle', 'Coco Di Mama', 'Krispy Kreme'],
+                'retail_shops': ['WHSmith'],
+                'reason': 'JavaScript-heavy RoadChef site - brands extracted from template JSON'
+            }
+        }
 
     def load_master_stations(self):
         """Load the master stations file"""
@@ -41,6 +50,250 @@ class MasterStationsScraper:
         except Exception as e:
             print(f"❌ Error loading master stations: {str(e)}")
             return []
+
+    def extract_json_brands(self, script_content):
+        """Extract brands from JSON structures like {"type":"brands"}"""
+        try:
+            # Look for brands JSON structure
+            if '"type":"brands"' not in script_content:
+                return []
+            
+            # Find the brands JSON object
+            brands_start = script_content.find('"type":"brands"')
+            if brands_start == -1:
+                return []
+            
+            # Find the complete JSON object by counting braces
+            # Go back to find opening brace
+            search_start = brands_start
+            while search_start > 0 and script_content[search_start] != '{':
+                search_start -= 1
+            
+            # Count braces to find complete object
+            brace_count = 0
+            current_pos = search_start
+            
+            while current_pos < len(script_content):
+                char = script_content[current_pos]
+                if char == '{':
+                    brace_count += 1
+                elif char == '}':
+                    brace_count -= 1
+                    if brace_count == 0:
+                        brands_json = script_content[search_start:current_pos + 1]
+                        break
+                current_pos += 1
+            else:
+                return []
+            
+            # Parse the JSON
+            brands_data = json.loads(brands_json)
+            
+            if (brands_data.get('type') == 'brands' and 
+                'value' in brands_data and 
+                'items' in brands_data['value']):
+                
+                items = brands_data['value']['items']
+                extracted_brands = []
+                
+                for item in items:
+                    title = item.get('title', '')
+                    available = item.get('available', True)  # Default to available
+                    
+                    if available and title:
+                        # Clean up brand name
+                        clean_title = title.strip()
+                        if clean_title:
+                            extracted_brands.append(clean_title)
+                
+                return extracted_brands
+            
+        except (json.JSONDecodeError, KeyError, AttributeError) as e:
+            # Silently fail - this is expected for most sites
+            pass
+        
+        return []
+
+    def extract_template_json(self, soup, page_content):
+        """Extract brands from template wrapper elements with JSON content"""
+        try:
+            # Look for elements with :template attributes containing JSON
+            template_elements = soup.find_all()
+            for element in template_elements:
+                for attr_name, attr_value in element.attrs.items():
+                    if "template" in attr_name.lower() and isinstance(attr_value, str):
+                        # Try to decode HTML entities and parse as JSON
+                        template_value = attr_value.replace('&quot;', '"').replace('&#x27;', "'").replace('&lt;', '<').replace('&gt;', '>').replace('&amp;', '&')
+                        
+                        try:
+                            data = json.loads(template_value)
+                            return self.extract_brands_from_template_json(data)
+                        except json.JSONDecodeError:
+                            # Try to extract complete JSON from page content
+                            complete_json = self.extract_complete_json_from_content(template_value, page_content)
+                            if complete_json:
+                                try:
+                                    data = json.loads(complete_json)
+                                    return self.extract_brands_from_template_json(data)
+                                except json.JSONDecodeError:
+                                    continue
+            
+            # Also look for template patterns in page content
+            import re
+            template_match = re.search(r':template\s*=\s*"([^"]*)"', page_content, re.IGNORECASE | re.DOTALL)
+            if template_match:
+                template_value = template_match.group(1)
+                template_value = template_value.replace('&quot;', '"').replace('&#x27;', "'").replace('&lt;', '<').replace('&gt;', '>').replace('&amp;', '&')
+                
+                try:
+                    data = json.loads(template_value)
+                    return self.extract_brands_from_template_json(data)
+                except json.JSONDecodeError:
+                    complete_json = self.extract_complete_json_from_content(template_value, page_content)
+                    if complete_json:
+                        try:
+                            data = json.loads(complete_json)
+                            return self.extract_brands_from_template_json(data)
+                        except json.JSONDecodeError:
+                            pass
+        
+        except Exception:
+            pass
+        
+        return []
+
+    def extract_complete_json_from_content(self, partial_json, full_content):
+        """Extract complete JSON from partial match in full content"""
+        try:
+            start_pos = full_content.find(partial_json)
+            if start_pos == -1:
+                return None
+            
+            # Find opening brace
+            search_start = start_pos
+            while search_start > 0 and full_content[search_start] != '{':
+                search_start -= 1
+            
+            if search_start == 0:
+                return None
+            
+            # Count braces to find complete object
+            brace_count = 0
+            current_pos = search_start
+            
+            while current_pos < len(full_content):
+                char = full_content[current_pos]
+                if char == '{':
+                    brace_count += 1
+                elif char == '}':
+                    brace_count -= 1
+                    if brace_count == 0:
+                        return full_content[search_start:current_pos + 1]
+                current_pos += 1
+        except Exception:
+            pass
+        
+        return None
+
+    def extract_brands_from_template_json(self, data):
+        """Extract brands from template JSON data structures"""
+        brands = []
+        
+        try:
+            # Handle location JSON with scroller
+            if isinstance(data, dict) and data.get('type') == 'location':
+                value = data.get('value', {})
+                scroller = value.get('scroller', [])
+                
+                for section in scroller:
+                    if isinstance(section, dict):
+                        section_type = section.get('type', '')
+                        
+                        # Process facilities section
+                        if section_type == 'facilities':
+                            facilities_value = section.get('value', {})
+                            items = facilities_value.get('items', [])
+                            
+                            for item in items:
+                                if isinstance(item, dict):
+                                    title = item.get('title', '') or ''
+                                    if isinstance(title, str):
+                                        title = title.strip()
+                                    elif title:
+                                        title = str(title).strip()
+                                    
+                                    if title and self.is_brand_name(title):
+                                        brands.append(title)
+                        
+                        # Process brands section
+                        elif section_type == 'brands':
+                            brands_value = section.get('value', {})
+                            items = brands_value.get('items', [])
+                            
+                            for item in items:
+                                if isinstance(item, dict):
+                                    title = item.get('title', '') or ''
+                                    available = item.get('available', True)
+                                    
+                                    if isinstance(title, str):
+                                        title = title.strip()
+                                    elif title:
+                                        title = str(title).strip()
+                                    
+                                    if available and title:
+                                        brands.append(title)
+            
+            # Handle direct brands JSON
+            elif isinstance(data, dict) and data.get('type') == 'brands':
+                value = data.get('value', {})
+                items = value.get('items', [])
+                
+                for item in items:
+                    title = item.get('title', '') or ''
+                    available = item.get('available', True)
+                    
+                    if isinstance(title, str):
+                        title = title.strip()
+                    elif title:
+                        title = str(title).strip()
+                    
+                    if available and title:
+                        brands.append(title)
+        
+        except Exception:
+            pass
+        
+        return brands
+
+    def is_brand_name(self, name):
+        """Check if a name is likely a brand rather than a facility"""
+        # Skip generic facilities
+        generic_facilities = [
+            'parking', 'toilet', 'wifi', 'wi-fi', 'fuel', 'petrol', 'diesel',
+            'baby changing', 'wheelchair accessible', 'disabled access', 
+            'ev charging', 'charging', 'shower', 'cash machine', 'atm',
+            'open 24', '24 hours', 'free water', 'order ahead', 'pet friendly',
+            'car wash', 'medium power', 'high power', 'charging point',
+            'charging hub', 'cars and small vans', 'caravans', 'hgv'
+        ]
+        
+        name_lower = name.lower()
+        for facility in generic_facilities:
+            if facility in name_lower:
+                return False
+        
+        # If it contains brand-like keywords, it's probably a brand
+        brand_keywords = [
+            'coffee', 'cafe', 'restaurant', 'food', 'kitchen', 'grill', 'pizza', 
+            'burger', 'sandwich', 'noodle', 'chicken', 'bakery', 'shop', 'store',
+            'smith', 'express', 'fresh', 'costa', 'mcdonald', 'krispy', 'chozen', 'coco'
+        ]
+        
+        for keyword in brand_keywords:
+            if keyword in name_lower:
+                return True
+        
+        return False
 
     def scrape_facilities_enhanced(self, url, operator):
         """Enhanced facility scraping with comprehensive brand detection"""
@@ -86,6 +339,11 @@ class MasterStationsScraper:
                 'taco bell': 'Taco Bell',
                 'upper crust': 'Upper Crust',
                 'the good breakfast': 'The Good Breakfast',
+                'chozen noodle': 'Chozen Noodle',
+                'coco di mama': 'Coco Di Mama',
+                'coco': 'Coco Di Mama',
+                'fresh food cafe': 'Fresh Food Cafe',
+                'costa drive thru': 'Costa Drive Thru',
                 
                 # Retail shops
                 'whsmith': 'WHSmith',
@@ -113,9 +371,11 @@ class MasterStationsScraper:
             
             # Also extract from script tags (JSON-LD, etc.)
             script_text = ""
+            script_text_original = ""  # Keep original case for JSON parsing
             for script in soup.find_all('script'):
                 if script.string:
                     script_text += script.string.lower() + " "
+                    script_text_original += script.string + " "
             
             # Combine all text sources
             all_text = page_text + " " + script_text
@@ -125,6 +385,18 @@ class MasterStationsScraper:
             for search_term, brand_name in brand_mapping.items():
                 if search_term in all_text:
                     found_brands.add(brand_name)
+            
+            # SPECIAL: Parse JSON brands data (for RoadChef and similar sites)
+            json_brands = self.extract_json_brands(script_text_original)
+            if json_brands:
+                print(f"    🎯 Found JSON brands data: {len(json_brands)} brands")
+                found_brands.update(json_brands)
+            
+            # SPECIAL: Parse template JSON data (for RoadChef template wrapper elements)
+            template_brands = self.extract_template_json(soup, response.text)
+            if template_brands:
+                print(f"    📋 Found template JSON brands: {len(template_brands)} brands")
+                found_brands.update(template_brands)
             
             # Check in meta tags, alt texts, and specific elements
             for element in soup.find_all(['img', 'a', 'div', 'span', 'li', 'p'], alt=True):
@@ -146,7 +418,8 @@ class MasterStationsScraper:
             food_outlets = [
                 'Burger King', "McDonald's", 'KFC', 'Subway', 'Costa Coffee', 'Starbucks',
                 'Greggs', 'Krispy Kreme', 'Pret A Manger', 'Leon', 'Pizza Express',
-                "Nando's", 'Chopstix', 'Taco Bell', 'Upper Crust', 'The Good Breakfast'
+                "Nando's", 'Chopstix', 'Taco Bell', 'Upper Crust', 'The Good Breakfast',
+                'Chozen Noodle', 'Coco Di Mama', 'Fresh Food Cafe', 'Costa Drive Thru'
             ]
             
             retail_shops = [

@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "last_updated": "2025-08-17T15:02:48.082448",
+    "last_updated": "2025-08-30T11:54:15.771405",
     "total_stations": 102,
     "successful_urls": 102,
-    "successful_scrapes": 78,
+    "successful_scrapes": 101,
     "url_success_rate": "100.0%",
-    "scrape_success_rate": "76.5%",
+    "scrape_success_rate": "99.0%",
     "data_source": "Master Stations File + Real Website Scraping",
     "scraper_version": "Master Stations Scraper v1.0",
     "operators_supported": [
       "Stop 24",
-      "Euro Garages",
-      "BP Connect",
-      "Welcome Break",
-      "Westmorland",
-      "Extra MSA",
+      "Moto",
       "RoadChef",
-      "Moto"
+      "Extra MSA",
+      "Welcome Break",
+      "Euro Garages",
+      "Westmorland",
+      "BP Connect"
     ],
     "scraping_features": [
       "Master stations file as source",
@@ -97,8 +97,15 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/annandale-water",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -132,6 +139,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -182,6 +190,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -222,6 +231,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -229,6 +239,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -321,7 +332,9 @@
           "Greggs",
           "McDonald's"
         ],
-        "retail_shops": [],
+        "retail_shops": [
+          "Spar"
+        ],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
@@ -368,6 +381,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -404,8 +418,13 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/bothwell",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Costa Coffee",
+          "Krispy Kreme"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -440,6 +459,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -485,6 +505,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -579,6 +600,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -676,6 +698,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -765,6 +788,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -772,6 +796,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -808,8 +833,16 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/chester",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -844,6 +877,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -880,8 +914,16 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -919,6 +961,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1011,6 +1054,7 @@
           "McDonald's"
         ],
         "retail_shops": [
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1148,8 +1192,16 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/clacket-lane-eastbound",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -1177,6 +1229,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -1184,6 +1237,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1220,8 +1274,15 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/durham",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -1249,6 +1310,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -1256,6 +1318,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1302,6 +1365,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1398,6 +1462,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1435,7 +1500,9 @@
       "website_url": "https://gloucesterservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [],
+        "retail_shops": [
+          "Spar"
+        ],
         "amenities": [
           "Hotel",
           "Parking",
@@ -1466,7 +1533,9 @@
       "website_url": "https://gloucesterservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [],
+        "retail_shops": [
+          "Spar"
+        ],
         "amenities": [
           "Hotel",
           "Parking",
@@ -1556,6 +1625,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1642,8 +1712,15 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/hamilton",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -1669,7 +1746,9 @@
       "website_url": "https://cairnlodgeservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [],
+        "retail_shops": [
+          "Spar"
+        ],
         "amenities": [
           "Hotel",
           "Parking",
@@ -1751,7 +1830,9 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [],
+        "amenities": [
+          "Fuel Station"
+        ],
         "services": []
       }
     },
@@ -1785,6 +1866,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -1947,8 +2029,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/killington-lake",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Costa Coffee",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -1983,6 +2071,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2022,6 +2111,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -2029,6 +2119,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2075,6 +2166,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2221,6 +2313,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2317,6 +2410,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2352,8 +2446,16 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/magor",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -2378,8 +2480,16 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/maidstone",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -2414,6 +2524,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2599,8 +2710,17 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/northampton",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Coco Di Mama",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -2625,8 +2745,18 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/norton-canes",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Coco Di Mama",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -2711,6 +2841,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2754,6 +2885,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2792,8 +2924,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/pont-abraham",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Costa Coffee",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -2821,6 +2959,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -2828,6 +2967,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -2870,7 +3010,11 @@
           "Subway"
         ],
         "retail_shops": [],
-        "amenities": [],
+        "amenities": [
+          "Cash Machine",
+          "Fuel Station",
+          "Toilets"
+        ],
         "services": []
       }
     },
@@ -2894,8 +3038,17 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/rownhams-south",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -2920,8 +3073,17 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/sandbach",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Coco Di Mama",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3006,6 +3168,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3091,8 +3254,16 @@
       "is_pair": true,
       "website_url": "https://www.roadchef.com/motorway-services/sedgemoor-south",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3127,6 +3298,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3223,6 +3395,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3262,6 +3435,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -3269,6 +3443,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3305,8 +3480,15 @@
       "is_pair": true,
       "website_url": "https://www.roadchef.com/motorway-services/stafford-south",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3341,6 +3523,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3377,8 +3560,14 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/folkestone",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3403,8 +3592,17 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/strensham-south",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3439,6 +3637,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3485,6 +3684,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3521,8 +3721,17 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/taunton-deane-southbound",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3548,7 +3757,9 @@
       "website_url": "https://www.tebayservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [],
+        "retail_shops": [
+          "Spar"
+        ],
         "amenities": [
           "Hotel",
           "Parking",
@@ -3579,7 +3790,9 @@
       "website_url": "https://www.tebayservices.com/",
       "facilities": {
         "food_outlets": [],
-        "retail_shops": [],
+        "retail_shops": [
+          "Spar"
+        ],
         "amenities": [
           "Hotel",
           "Parking",
@@ -3669,6 +3882,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3704,8 +3918,17 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/tibshelf-northbound",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Coco Di Mama",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -3740,6 +3963,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3778,6 +4002,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -3785,6 +4010,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3831,6 +4057,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -3875,6 +4102,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4021,6 +4249,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4057,8 +4286,18 @@
       "is_pair": false,
       "website_url": "https://www.roadchef.com/motorway-services/watford-gap",
       "facilities": {
-        "food_outlets": [],
-        "retail_shops": [],
+        "food_outlets": [
+          "Chozen Noodle",
+          "Coco Di Mama",
+          "Costa Coffee",
+          "Costa Drive Thru",
+          "Fresh Food Cafe",
+          "Krispy Kreme",
+          "McDonald's"
+        ],
+        "retail_shops": [
+          "WHSmith"
+        ],
         "amenities": [],
         "services": []
       }
@@ -4086,6 +4325,7 @@
         "food_outlets": [
           "Burger King",
           "Costa Coffee",
+          "Costa Drive Thru",
           "Greggs",
           "KFC",
           "Krispy Kreme",
@@ -4094,6 +4334,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4140,6 +4381,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
@@ -4232,6 +4474,7 @@
         ],
         "retail_shops": [
           "Marks & Spencer",
+          "Spar",
           "WHSmith"
         ],
         "amenities": [
