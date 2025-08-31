@@ -368,28 +368,60 @@ class MasterStationsScraper:
                 'services': []
             }
             
-            # Extract all text content
-            page_text = soup.get_text().lower()
-            
-            # Also extract from script tags (JSON-LD, etc.)
-            script_text = ""
-            script_text_original = ""  # Keep original case for JSON parsing
-            for script in soup.find_all('script'):
-                if script.string:
-                    script_text += script.string.lower() + " "
-                    script_text_original += script.string + " "
-            
-            # Combine all text sources
-            all_text = page_text + " " + script_text
-            
-            # Enhanced brand detection from all sources with precise matching
+            # Extract location-specific content only (avoid navigation/header/footer)
             found_brands = set()
             import re
+            
+            # Remove navigation, header, footer, and menu elements that contain general site info
+            for element in soup.find_all(['nav', 'header', 'footer', 'aside']):
+                element.decompose()
+            
+            # Remove elements with classes/IDs that typically contain site-wide navigation
+            navigation_selectors = [
+                '[class*="nav"]', '[class*="menu"]', '[class*="header"]', '[class*="footer"]',
+                '[id*="nav"]', '[id*="menu"]', '[id*="header"]', '[id*="footer"]',
+                '[class*="breadcrumb"]', '[class*="sitemap"]'
+            ]
+            for selector in navigation_selectors:
+                for element in soup.select(selector):
+                    element.decompose()
+            
+            # Focus on main content areas that are location-specific
+            main_content_selectors = [
+                'main', '[role="main"]', '.main-content', '.content', 
+                '.location-content', '.station-details', '.facilities'
+            ]
+            
+            location_text = ""
+            script_text_original = ""
+            
+            # Try to find main content area first
+            main_content = None
+            for selector in main_content_selectors:
+                main_content = soup.select_one(selector)
+                if main_content:
+                    break
+            
+            if main_content:
+                # Use only main content area
+                location_text = main_content.get_text().lower()
+                # Also get scripts from main content area
+                for script in main_content.find_all('script'):
+                    if script.string:
+                        script_text_original += script.string + " "
+            else:
+                # Fallback: use body content but be more selective
+                body = soup.find('body')
+                if body:
+                    location_text = body.get_text().lower()
+                    for script in body.find_all('script'):
+                        if script.string:
+                            script_text_original += script.string + " "
+            
+            # Enhanced brand detection with location-specific context
             for search_term, brand_name in brand_mapping.items():
-                # Use word boundaries for more precise matching to avoid false positives
-                # like "spar" matching in "spare", "sparse", "transparent", etc.
                 pattern = r'\b' + re.escape(search_term) + r'\b'
-                if re.search(pattern, all_text, re.IGNORECASE):
+                if re.search(pattern, location_text, re.IGNORECASE):
                     found_brands.add(brand_name)
             
             # SPECIAL: Parse JSON brands data (for RoadChef and similar sites)
@@ -404,18 +436,40 @@ class MasterStationsScraper:
                 print(f"    📋 Found template JSON brands: {len(template_brands)} brands")
                 found_brands.update(template_brands)
             
-            # Check in meta tags, alt texts, and specific elements with precise matching
-            for element in soup.find_all(['img', 'a', 'div', 'span', 'li', 'p'], alt=True):
+            # Check in location-specific elements only
+            search_area = main_content if main_content else soup
+            
+            # Check alt texts in location-specific area
+            for element in search_area.find_all(['img', 'a'], alt=True):
                 alt_text = element.get('alt', '').lower()
                 for search_term, brand_name in brand_mapping.items():
                     pattern = r'\b' + re.escape(search_term) + r'\b'
                     if re.search(pattern, alt_text, re.IGNORECASE):
                         found_brands.add(brand_name)
             
-            # Check element text content and class names with precise matching
-            for element in soup.find_all(['div', 'span', 'li', 'p', 'h1', 'h2', 'h3', 'h4']):
+            # Check facility/content specific elements only
+            facility_elements = search_area.find_all([
+                'div', 'span', 'li', 'p', 'h1', 'h2', 'h3', 'h4'
+            ])
+            
+            for element in facility_elements:
+                # Skip elements that might be navigation or general site content
+                classes = element.get('class', [])
+                element_id = element.get('id', '')
+                
+                # Skip if element contains navigation-like classes or IDs
+                skip_element = False
+                skip_keywords = ['nav', 'menu', 'header', 'footer', 'breadcrumb', 'sitemap']
+                for keyword in skip_keywords:
+                    if any(keyword in str(cls).lower() for cls in classes) or keyword in element_id.lower():
+                        skip_element = True
+                        break
+                
+                if skip_element:
+                    continue
+                
                 element_text = element.get_text().lower()
-                class_names = ' '.join(element.get('class', [])).lower()
+                class_names = ' '.join(classes).lower()
                 
                 for search_term, brand_name in brand_mapping.items():
                     pattern = r'\b' + re.escape(search_term) + r'\b'
@@ -479,7 +533,7 @@ class MasterStationsScraper:
             }
             
             for keyword, amenity in amenity_keywords.items():
-                if keyword in all_text and amenity not in facilities['amenities']:
+                if keyword in location_text and amenity not in facilities['amenities']:
                     facilities['amenities'].append(amenity)
             
             facilities['amenities'] = sorted(list(set(facilities['amenities'])))
