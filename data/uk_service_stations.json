@@ -1,22 +1,22 @@
 {
   "metadata": {
-    "last_updated": "2025-08-30T12:19:44.777286",
+    "last_updated": "2025-08-31T14:52:15.660731",
     "total_stations": 102,
     "successful_urls": 102,
-    "successful_scrapes": 101,
+    "successful_scrapes": 99,
     "url_success_rate": "100.0%",
-    "scrape_success_rate": "99.0%",
+    "scrape_success_rate": "97.1%",
     "data_source": "Master Stations File + Real Website Scraping",
     "scraper_version": "Master Stations Scraper v1.0",
     "operators_supported": [
+      "Extra MSA",
+      "Stop 24",
       "Westmorland",
-      "RoadChef",
+      "BP Connect",
       "Euro Garages",
       "Welcome Break",
-      "Stop 24",
-      "Moto",
-      "Extra MSA",
-      "BP Connect"
+      "RoadChef",
+      "Moto"
     ],
     "scraping_features": [
       "Master stations file as source",
@@ -50,17 +50,12 @@
         "food_outlets": [
           "Burger King",
           "Chopstix",
-          "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
-          "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
+          "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
@@ -131,16 +126,11 @@
       "website_url": "https://extraservices.co.uk/locations/baldock",
       "facilities": {
         "food_outlets": [
-          "Chopstix",
           "Greggs",
-          "KFC",
           "McDonald's",
           "Starbucks"
         ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
           "Cash Machine",
@@ -183,8 +173,6 @@
           "KFC",
           "Leon",
           "McDonald's",
-          "Nando's",
-          "Pizza Express",
           "Starbucks"
         ],
         "retail_shops": [
@@ -226,29 +214,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/birch-eastbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -326,8 +295,7 @@
         "food_outlets": [
           "Chopstix",
           "Costa Coffee",
-          "Greggs",
-          "McDonald's"
+          "Greggs"
         ],
         "retail_shops": [],
         "amenities": [
@@ -366,28 +334,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/blyth/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -443,27 +393,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/bridgwater/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -488,28 +421,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/burton-in-kendal/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -535,27 +450,18 @@
       "website_url": "https://welcomebreak.co.uk/locations/burton/",
       "facilities": {
         "food_outlets": [
-          "Burger King",
-          "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Starbucks"
         ],
         "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
+          "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -591,8 +497,7 @@
           "McDonald's"
         ],
         "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
+          "Marks & Spencer"
         ],
         "amenities": [
           "Baby Changing",
@@ -631,14 +536,9 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Starbucks"
         ],
         "retail_shops": [
           "WHSmith",
@@ -646,11 +546,9 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -679,28 +577,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/cardiff-west/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -727,13 +607,10 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -742,7 +619,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
@@ -775,29 +651,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/cherwell-valley/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -856,28 +713,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/chieveley/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -941,15 +780,13 @@
           "Greggs",
           "KFC",
           "Leon",
-          "McDonald's",
           "Nando's",
           "Pizza Express",
           "Pret A Manger",
           "Starbucks"
         ],
         "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
+          "Marks & Spencer"
         ],
         "amenities": [
           "Baby Changing",
@@ -991,7 +828,6 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
           "Taco Bell",
@@ -1049,7 +885,6 @@
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -1079,21 +914,10 @@
       "website_url": "https://welcomebreak.co.uk/locations/derby/",
       "facilities": {
         "food_outlets": [
-          "Burger King",
-          "Chopstix",
           "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Starbucks"
         ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
           "Days Inn",
@@ -1129,21 +953,10 @@
       "website_url": "https://welcomebreak.co.uk/locations/derby/",
       "facilities": {
         "food_outlets": [
-          "Burger King",
-          "Chopstix",
           "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Starbucks"
         ],
-        "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
-        ],
+        "retail_shops": [],
         "amenities": [
           "Baby Changing",
           "Days Inn",
@@ -1212,29 +1025,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/donington-park/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -1292,29 +1086,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/exeter/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -1339,28 +1114,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/ferrybridge/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -1435,28 +1192,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/frankley-southbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -1484,7 +1223,6 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets"
@@ -1515,7 +1253,6 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets"
@@ -1548,10 +1285,8 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -1560,7 +1295,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
@@ -1593,28 +1327,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/grantham-north/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -1644,10 +1360,7 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
-          "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -1659,7 +1372,6 @@
           "Days Inn",
           "Disabled Access",
           "EV Charging",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
@@ -1725,7 +1437,6 @@
         "food_outlets": [],
         "retail_shops": [],
         "amenities": [
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets"
@@ -1758,10 +1469,8 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -1805,9 +1514,7 @@
       "facilities": {
         "food_outlets": [],
         "retail_shops": [],
-        "amenities": [
-          "Fuel Station"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -1831,28 +1538,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/heston-westbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -1908,10 +1597,8 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -1920,11 +1607,9 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -1958,23 +1643,19 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
           "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
-          "WHSmith",
           "Waitrose & Partners"
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
-          "Hotel",
           "Parking",
           "Showers",
           "Toilets",
@@ -2035,28 +1716,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/kinross/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2081,29 +1744,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/knutsford-northbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2128,28 +1772,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/lancaster-northbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2179,7 +1805,6 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
           "Taco Bell",
@@ -2229,7 +1854,6 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
           "Taco Bell",
@@ -2274,28 +1898,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/leigh-delamere-westbound",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2322,14 +1928,9 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
-          "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Subway"
         ],
         "retail_shops": [
           "WHSmith",
@@ -2337,9 +1938,7 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
-          "EV Charging",
           "Fuel Station",
           "Hotel",
           "Parking",
@@ -2370,27 +1969,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/lymm/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2483,28 +2065,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/medway-eastbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2534,10 +2098,8 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -2581,13 +2143,10 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -2599,7 +2158,6 @@
           "Days Inn",
           "Disabled Access",
           "EV Charging",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
@@ -2633,7 +2191,6 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
           "Taco Bell",
@@ -2645,7 +2202,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
@@ -2754,7 +2310,6 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
           "Taco Bell",
@@ -2766,7 +2321,6 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
           "Fuel Station",
@@ -2799,27 +2353,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/pease-pottage/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2847,8 +2384,7 @@
         "food_outlets": [
           "Chopstix",
           "Costa Coffee",
-          "KFC",
-          "McDonald's"
+          "KFC"
         ],
         "retail_shops": [
           "Marks & Spencer",
@@ -2922,29 +2458,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/reading-westbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -2975,11 +2492,7 @@
           "Subway"
         ],
         "retail_shops": [],
-        "amenities": [
-          "Cash Machine",
-          "Fuel Station",
-          "Toilets"
-        ],
+        "amenities": [],
         "services": []
       }
     },
@@ -3075,18 +2588,12 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
-          "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Subway"
         ],
         "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
+          "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
@@ -3123,27 +2630,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/scotch-corner/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3171,17 +2661,13 @@
         "food_outlets": [
           "Burger King",
           "Chopstix",
-          "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
-          "WHSmith",
-          "Waitrose & Partners"
+          "WHSmith"
         ],
         "amenities": [
           "Baby Changing",
@@ -3252,28 +2738,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/severn-view/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3300,7 +2768,6 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
           "KFC",
           "Krispy Kreme",
           "Pret A Manger",
@@ -3315,10 +2782,8 @@
         ],
         "amenities": [
           "Baby Changing",
-          "Days Inn",
           "Disabled Access",
           "EV Charging",
-          "Fuel Station",
           "Hotel",
           "Parking",
           "Showers",
@@ -3348,28 +2813,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/southwaite-southbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3394,29 +2841,10 @@
       "is_pair": true,
       "website_url": "https://moto-way.com/services/stafford-northbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3474,28 +2902,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/stirling/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3587,28 +2997,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/swansea/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3633,28 +3025,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/tamworth/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3778,17 +3152,10 @@
       "facilities": {
         "food_outlets": [
           "Burger King",
-          "Chopstix",
-          "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
-          "Starbucks",
-          "Subway",
-          "Taco Bell",
-          "The Good Breakfast"
+          "Starbucks"
         ],
         "retail_shops": [
-          "WHSmith",
           "Waitrose & Partners"
         ],
         "amenities": [
@@ -3826,27 +3193,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/thurrock/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3906,27 +3256,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/tiverton/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3951,29 +3284,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/toddington-southbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -3998,26 +3312,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/todhills-southbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Toilets",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -4042,28 +3340,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/trowell-northbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -4096,7 +3376,6 @@
           "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -4146,7 +3425,6 @@
           "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -4188,28 +3466,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/washington-northbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -4270,30 +3530,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/wetherby/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Costa Drive Thru",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Leon",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "Days Inn",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
@@ -4318,25 +3558,9 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/motorway-services/motorway-services-by-motorway/m3-motorway-services/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
-        "amenities": [
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "WiFi"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
+        "amenities": [],
         "services": []
       }
     },
@@ -4365,10 +3589,8 @@
           "Chopstix",
           "KFC",
           "Krispy Kreme",
-          "Pret A Manger",
           "Starbucks",
           "Subway",
-          "Taco Bell",
           "The Good Breakfast"
         ],
         "retail_shops": [
@@ -4410,28 +3632,10 @@
       "is_pair": false,
       "website_url": "https://moto-way.com/services/woolley-edge-southbound/",
       "facilities": {
-        "food_outlets": [
-          "Burger King",
-          "Costa Coffee",
-          "Greggs",
-          "KFC",
-          "Krispy Kreme",
-          "Pret A Manger"
-        ],
-        "retail_shops": [
-          "Marks & Spencer",
-          "WHSmith"
-        ],
+        "food_outlets": [],
+        "retail_shops": [],
         "amenities": [
-          "Baby Changing",
-          "EV Charging",
-          "Fuel Station",
-          "Hotel",
-          "Parking",
-          "Showers",
-          "Toilets",
-          "Travelodge",
-          "WiFi"
+          "EV Charging"
         ],
         "services": []
       }
